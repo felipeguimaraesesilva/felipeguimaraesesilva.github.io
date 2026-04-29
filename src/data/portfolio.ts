@@ -33,9 +33,18 @@ export interface Experience {
   description: string;
 }
 
+export interface SideProject {
+  name: string;
+  tag: string;
+  description: string;
+  github?: string;
+  website?: string;
+}
+
 export interface PortfolioContent {
   personal: Personal;
   band: Band;
+  sideProjects: SideProject[];
   skillCategories: SkillCategory[];
   experiences: Experience[];
   ui: UI;

@@ -17,6 +17,14 @@
     "instagram": "",
     "website": "https://www.bandontherunmusic.com/"
   },
+  "sideProjects": [
+    {
+      "name": "SMS Based Residential Security",
+      "tag": "Prototype",
+      "description": "A residential alarm system prototype that uses SMS messaging for real-time alerts and remote control, built with low-cost hardware integration.",
+      "github": "https://github.com/felipeguimaraesesilva/residential-alarm"
+    }
+  ],
   "skillCategories": [
     {
       "category": "Backend & AI",

@@ -11,6 +11,7 @@ import Chip from "@mui/material/Chip";
 import EmailIcon from "@mui/icons-material/Email";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import LanguageIcon from "@mui/icons-material/Language";
+import GitHubIcon from "@mui/icons-material/GitHub";
 import { GithubIcon, LinkedinIcon } from "@/components/ui/SocialIcons";
 import Image from "next/image";
 
@@ -29,6 +30,7 @@ export function AboutSection() {
   const content = useContent();
   const personal = content?.personal;
   const band = content?.band;
+  const sideProjects = content?.sideProjects ?? [];
 
   return (
     <Box id="about" sx={{ position: "relative", overflow: "hidden", minHeight: { xs: "80vh", md: "90vh" }, display: "flex", flexDirection: "column" }}>
@@ -298,6 +300,121 @@ export function AboutSection() {
                   </Tooltip>
                 )}
               </Box>
+            </Box>
+          )}
+
+          {sideProjects.length > 0 && (
+            <Box sx={{ display: "flex", flexDirection: "column", gap: 2, mt: band ? 2 : 0 }}>
+              {sideProjects.map((project) => (
+                <Box
+                  key={project.name}
+                  sx={{
+                    display: "flex",
+                    gap: 3,
+                    alignItems: "flex-start",
+                    p: 3,
+                    borderRadius: 3,
+                    border: "1px solid",
+                    borderColor: "divider",
+                    backgroundColor: "rgba(255,255,255,0.02)",
+                    maxWidth: 540,
+                    transition: "border-color 0.25s",
+                    "&:hover": { borderColor: "rgba(59,130,246,0.3)" },
+                  }}
+                >
+                  <Box
+                    sx={{
+                      width: 44,
+                      height: 44,
+                      borderRadius: 2.5,
+                      background: "linear-gradient(135deg, rgba(59,130,246,0.18), rgba(14,165,233,0.12))",
+                      border: "1px solid rgba(59,130,246,0.2)",
+                      display: "flex",
+                      alignItems: "center",
+                      justifyContent: "center",
+                      flexShrink: 0,
+                      mt: 0.25,
+                    }}
+                  >
+                    <GitHubIcon sx={{ fontSize: 20, color: "primary.main" }} />
+                  </Box>
+
+                  <Box sx={{ flexGrow: 1 }}>
+                    <Box sx={{ display: "flex", alignItems: "center", gap: 1.5, mb: 0.5 }}>
+                      <Typography sx={{ fontWeight: 700, color: "text.primary", fontSize: "0.97rem" }}>
+                        {project.name}
+                      </Typography>
+                      <Chip
+                        label={project.tag}
+                        size="small"
+                        sx={{
+                          height: 20,
+                          fontSize: "0.62rem",
+                          fontWeight: 500,
+                          backgroundColor: "rgba(14,165,233,0.08)",
+                          color: "secondary.light",
+                          border: "1px solid rgba(14,165,233,0.18)",
+                        }}
+                      />
+                    </Box>
+
+                    <Typography variant="body2" color="text.secondary" sx={{ lineHeight: 1.75, mb: 2, fontSize: "0.86rem" }}>
+                      {project.description}
+                    </Typography>
+
+                    <Box sx={{ display: "flex", gap: 1 }}>
+                      {project.github && (
+                        <Tooltip title="GitHub repository">
+                          <IconButton
+                            component="a"
+                            href={project.github}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            size="small"
+                            aria-label="GitHub repository"
+                            sx={{
+                              color: "text.disabled",
+                              border: "1px solid",
+                              borderColor: "divider",
+                              borderRadius: 1.5,
+                              width: 32,
+                              height: 32,
+                              "&:hover": { color: "primary.light", borderColor: "primary.light" },
+                              transition: "all 0.2s",
+                            }}
+                          >
+                            <GitHubIcon sx={{ fontSize: 16 }} />
+                          </IconButton>
+                        </Tooltip>
+                      )}
+                      {project.website && (
+                        <Tooltip title="Website">
+                          <IconButton
+                            component="a"
+                            href={project.website}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            size="small"
+                            aria-label="Project website"
+                            sx={{
+                              color: "text.disabled",
+                              border: "1px solid",
+                              borderColor: "divider",
+                              borderRadius: 1.5,
+                              width: 32,
+                              height: 32,
+                              "&:hover": { color: "primary.light", borderColor: "primary.light" },
+                              transition: "all 0.2s",
+                            }}
+                          >
+                            <LanguageIcon sx={{ fontSize: 16 }} />
+                          </IconButton>
+                        </Tooltip>
+                      )}
+                    </Box>
+                  </Box>
+                </Box>
+              ))}
             </Box>
           )}
         </Section>
