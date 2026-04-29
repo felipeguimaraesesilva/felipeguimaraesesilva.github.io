@@ -20,7 +20,7 @@ export function Section({ id, children }: SectionProps) {
       id={id}
       ref={ref}
       sx={{
-        py: { xs: 10, md: 14 },
+        py: { xs: 6, md: 9 },
         px: { xs: 2, sm: 4, md: 6 },
         maxWidth: "960px",
         mx: "auto",
@@ -45,7 +45,7 @@ interface SectionHeadingProps {
 
 export function SectionHeading({ title, subtitle }: SectionHeadingProps) {
   return (
-    <Box sx={{ mb: 7 }}>
+    <Box sx={{ mb: 5 }}>
       <Typography
         variant="h4"
         sx={{

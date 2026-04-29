@@ -9,20 +9,15 @@
     "location": "Montreal, QC, Canada",
     "competencies": "Senior Software Engineer with 18+ years of experience delivering high-complexity systems and distributed processing at global industry leaders — including an 8-year tenure at Capgemini and 6+ years as a consultant at Avenue Code, currently driving engineering excellence for eBay.\n\nProven expertise in mission-critical, high-availability systems, transforming massive data volumes into resilient business solutions. Solid background in architectural best practices, CI/CD pipelines, and AI-driven development.\n\nFluent in English, actively improving French (B2 Certificate — YMCA International Language School). Currently based in Montreal."
   },
-  "band": {
-    "name": "Band on the Run",
-    "genre": "Rock / Alternative",
-    "description": "Beyond engineering, music has always been a creative outlet. Playing and recording keeps me grounded and brings a different kind of problem-solving outside the screen.",
-    "since": "2010",
-    "instagram": "",
-    "website": "https://www.bandontherunmusic.com/"
-  },
   "sideProjects": [
     {
-      "name": "SMS Based Residential Security",
-      "tag": "IoT",
-      "description": "A residential alarm system prototype that uses SMS messaging for real-time alerts and remote control, built with low-cost hardware integration.",
-      "github": "https://github.com/felipeguimaraesesilva/residential-alarm"
+      "name": "Band on the Run",
+      "tag": "Music",
+      "type": "band",
+      "description": "Beyond engineering, music has always been a creative outlet.",
+      "logo": "/images/band-logo.png",
+      "instagram": "",
+      "website": "https://www.bandontherunmusic.com/"
     }
   ],
   "skillCategories": [
@@ -74,7 +69,7 @@
     }
   ],
   "ui": {
-    "logo": "FGS",
+    "logo": "",
     "nav": [
       { "href": "#about",      "label": "About"      },
       { "href": "#experience", "label": "Experience" },

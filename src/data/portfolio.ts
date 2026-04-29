@@ -12,15 +12,6 @@ export interface Personal {
   competencies: string;
 }
 
-export interface Band {
-  name: string;
-  genre: string;
-  description: string;
-  since: string;
-  instagram: string;
-  website?: string;
-}
-
 export interface SkillCategory {
   category: string;
   items: string[];
@@ -36,14 +27,17 @@ export interface Experience {
 export interface SideProject {
   name: string;
   tag: string;
+  type: "band" | "project" | "spotify";
   description: string;
+  logo?: string;
+  instagram?: string;
   github?: string;
   website?: string;
+  spotify?: string;
 }
 
 export interface PortfolioContent {
   personal: Personal;
-  band: Band;
   sideProjects: SideProject[];
   skillCategories: SkillCategory[];
   experiences: Experience[];
