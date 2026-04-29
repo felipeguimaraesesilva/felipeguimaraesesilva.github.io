@@ -4,6 +4,7 @@
 export interface Personal {
   greeting: string;
   name: string;
+  photo?: string;
   role: string;
   email: string;
   github: string;

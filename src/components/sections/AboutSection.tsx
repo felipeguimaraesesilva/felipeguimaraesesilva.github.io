@@ -1,6 +1,5 @@
 "use client";
 
-import { Section } from "@/components/ui/Section";
 import { useContent } from "@/context/ContentContext";
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
@@ -61,15 +60,47 @@ export function AboutSection() {
       >
         <Box
           sx={{
-            maxWidth: 680,
+            maxWidth: 900,
             width: "100%",
-            textAlign: "center",
             display: "flex",
-            flexDirection: "column",
-            alignItems: "center",
-            gap: 3,
+            flexDirection: { xs: "column", md: "row" },
+            alignItems: { xs: "center", md: "flex-start" },
+            gap: { xs: 5, md: 7 },
           }}
         >
+          {/* Photo — rectangular, left column */}
+          {personal?.photo && (
+            <Box
+              sx={{
+                flexShrink: 0,
+                width: { xs: 180, md: 220 },
+                height: { xs: 240, md: 290 },
+                borderRadius: 3,
+                overflow: "hidden",
+                position: "relative",
+                boxShadow: "0 8px 40px rgba(0,0,0,0.5)",
+              }}
+            >
+              <Image
+                src={personal.photo}
+                alt={personal.name}
+                fill
+                style={{ objectFit: "cover", objectPosition: "center top" }}
+              />
+            </Box>
+          )}
+
+          {/* Text — right column */}
+          <Box
+            sx={{
+              display: "flex",
+              flexDirection: "column",
+              alignItems: { xs: "center", md: "flex-start" },
+              textAlign: { xs: "center", md: "left" },
+              gap: 3,
+              flex: 1,
+            }}
+          >
           {/* Greeting */}
           <Typography
             sx={{
@@ -83,7 +114,7 @@ export function AboutSection() {
             {personal?.greeting}
           </Typography>
 
-          {/* Name — solid with inner shadow effect */}
+          {/* Name */}
           <Typography
             component="h1"
             sx={{
@@ -117,16 +148,16 @@ export function AboutSection() {
             {personal?.role}
           </Typography>
 
-          <Divider sx={{ borderColor: "rgba(59,130,246,0.4)", width: 60, my: 1 }} />
+          <Divider sx={{ borderColor: "rgba(59,130,246,0.4)", width: 60, my: 1, alignSelf: { xs: "center", md: "flex-start" } }} />
 
-          {/* Competencies panel */}
+          {/* Competencies */}
           <Box
             sx={{
               p: { xs: 2.5, md: 3 },
               borderRadius: 3,
-              border: "1px solid rgba(59,130,246,0.25)",
-              backgroundColor: "rgba(255,255,255,0.07)",
-              backdropFilter: "blur(12px)",
+              border: "none",
+              backgroundColor: "transparent",
+              backdropFilter: "blur(4px)",
               textAlign: "left",
             }}
           >
@@ -137,7 +168,7 @@ export function AboutSection() {
             </Typography>
           </Box>
 
-          <Box sx={{ display: "flex", gap: 1.5, justifyContent: "center" }}>
+          <Box sx={{ display: "flex", gap: 1.5, justifyContent: { xs: "center", md: "flex-start" } }}>
             <Tooltip title="GitHub">
               <IconButton
                 component="a"
@@ -162,6 +193,7 @@ export function AboutSection() {
                 <LinkedinIcon size={18} />
               </IconButton>
             </Tooltip>
+          </Box>
           </Box>
         </Box>
       </Box>

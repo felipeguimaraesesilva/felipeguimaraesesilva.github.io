@@ -2,6 +2,7 @@
   "personal": {
     "greeting": "Hi, I'm",
     "name": "Felipe Silva",
+    "photo": "/images/photo-placeholder.jpg",
     "role": "Senior Software Engineer",
     "email": "felipeguimaraesesilva@gmail.com",
     "github": "https://github.com/felipeguimaraesesilva",
@@ -22,24 +23,16 @@
   ],
   "skillCategories": [
     {
-      "category": "Backend & AI",
-      "items": ["Java", "Spring Boot", "Spring Batch", "Spring AI", "Python", "REST APIs", "SOAP"]
+      "category": "Backend & Data",
+      "items": ["Java", "Spring Framework", "Spring Boot", "Spring Batch", "Spring AI", "Python", "EJB", "JavaFX", "REST APIs", "SOAP", "MySQL", "NoSQL", "Oracle DB", "Kafka"]
     },
     {
       "category": "Big Data & Cloud",
-      "items": ["GCP", "GCP Pub/Sub", "Hadoop", "Hive", "Apache Spark", "SparkSQL", "PySpark", "Apache Flink", "Apache Airflow"]
+      "items": ["GCP", "GCP Pub/Sub", "Hadoop", "Hive", "Apache Spark", "SparkSQL", "PySpark", "Apache Flink", "Apache Airflow", "Firebase"]
     },
     {
-      "category": "Data & Messaging",
-      "items": ["Kafka", "MySQL", "NoSQL", "Oracle DB"]
-    },
-    {
-      "category": "Testing & Quality",
-      "items": ["Automated Testing", "Test Pyramid", "Contract Testing"]
-    },
-    {
-      "category": "DevOps & Tools",
-      "items": ["CI/CD Pipelines", "Scrum", "Maven", "Jenkins", "Git", "Claude", "GitHub Copilot", "Cline"]
+      "category": "Engineering & Quality",
+      "items": ["CI/CD Pipelines", "Technical Architecture", "Infrastructure Migration", "Maven", "Jenkins", "Git", "Scrum", "Automated Testing", "Test Pyramid", "Contract Testing", "Pact", "Spring Cloud Contract", "Claude", "GitHub Copilot", "Cline"]
     }
   ],
   "experiences": [
