@@ -40,7 +40,7 @@
     },
     {
       "category": "Testing & Quality",
-      "items": ["Automated Testing", "Component Testing", "Integration Testing", "Contract Testing (Pact)", "Spring Cloud Contract"]
+      "items": ["Automated Testing", "Test Pyramid", "Contract Testing"]
     },
     {
       "category": "DevOps & Tools",
