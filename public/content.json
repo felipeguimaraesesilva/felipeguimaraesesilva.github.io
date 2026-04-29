@@ -1,59 +1,67 @@
 {
   "personal": {
-    "greeting": "Olá, me chamo",
-    "name": "Felipe Guimarães",
-    "role": "UX/UI DESIGNER E DESENVOLVEDOR WEB",
-    "email": "seu@email.com",
+    "greeting": "Hi, I'm",
+    "name": "Felipe Silva",
+    "role": "Senior Software Engineer",
+    "email": "felipeguimaraesesilva@gmail.com",
     "github": "https://github.com/felipeguimaraesesilva",
-    "linkedin": "https://linkedin.com/in/seulinkedin",
-    "location": "Brazil",
-    "competencies": "I'm a full-stack developer with hands-on experience building scalable web applications and APIs. I enjoy working across the stack — from crafting intuitive interfaces to designing robust back-end systems.\n\nMy core strengths include TypeScript, React, Next.js, Node.js, and PostgreSQL. I care deeply about code quality, performance, and delivering products that actually make a difference.\n\nI thrive in collaborative, agile environments and I'm always looking to learn and grow with every project I take on."
+    "linkedin": "https://www.linkedin.com/in/felipe-guimaraes-silva/",
+    "location": "Montreal, QC, Canada",
+    "competencies": "Senior Software Engineer with 18+ years of experience delivering high-complexity systems and distributed processing at global industry leaders — including an 8-year tenure at Capgemini and 6+ years as a consultant at Avenue Code, currently driving engineering excellence for eBay.\n\nProven expertise in mission-critical, high-availability systems, transforming massive data volumes into resilient business solutions. Solid background in architectural best practices, CI/CD pipelines, and AI-driven development.\n\nFluent in English, actively improving French (B2 Certificate — YMCA International Language School). Currently based in Montreal."
   },
   "band": {
-    "name": "Band Name",
+    "name": "Music & Side Projects",
     "genre": "Rock / Alternative",
-    "description": "A side project I'm deeply passionate about. We write and perform original music, blending rock with electronic elements. Playing live, recording, and creating together keeps me grounded outside of the screen.",
-    "since": "2018",
-    "instagram": "https://instagram.com/suabanda"
+    "description": "Beyond engineering, music has always been a creative outlet. Playing and recording keeps me grounded and brings a different kind of problem-solving outside the screen.",
+    "since": "2010",
+    "instagram": ""
   },
   "skillCategories": [
     {
-      "category": "Frontend",
-      "items": ["TypeScript", "React", "Next.js", "HTML & CSS"]
+      "category": "Backend & AI",
+      "items": ["Java", "Spring Boot", "Spring Batch", "Spring AI", "Python", "REST APIs", "SOAP"]
     },
     {
-      "category": "Backend",
-      "items": ["Node.js", "Python", "PostgreSQL", "REST APIs"]
+      "category": "Big Data & Cloud",
+      "items": ["GCP", "GCP Pub/Sub", "Hadoop", "Hive", "Apache Spark", "SparkSQL", "PySpark", "Apache Flink", "Apache Airflow"]
+    },
+    {
+      "category": "Data & Messaging",
+      "items": ["Kafka", "MySQL", "NoSQL", "Oracle DB"]
+    },
+    {
+      "category": "Testing & Quality",
+      "items": ["Automated Testing", "Component Testing", "Integration Testing", "Contract Testing (Pact)", "Spring Cloud Contract"]
     },
     {
       "category": "DevOps & Tools",
-      "items": ["Docker", "Git", "Linux", "CI/CD"]
+      "items": ["CI/CD Pipelines", "Scrum", "Maven", "Jenkins", "Git", "Claude", "GitHub Copilot", "Cline"]
     }
   ],
   "experiences": [
     {
-      "period": "2023 — Present",
-      "company": "Current Company",
-      "role": "Full-Stack Developer",
-      "description": "Building and maintaining scalable web applications, collaborating with agile teams, and delivering high-quality features across the full stack."
+      "period": "Aug 2019 — Present",
+      "company": "Avenue Code",
+      "role": "Senior Software Engineer — Consultant for eBay",
+      "description": "6-year continuous engagement at eBay (Tier-1 client). Leading architectural decisions for SEO and process planning ecosystems. Architected mission-critical canonical URL infrastructure and distributed systems processing massive data volumes for millions of products globally. Integrated AI-driven workflows and LLMs to accelerate engineering productivity. Responsible for technical interviews and talent pipeline optimization."
     },
     {
-      "period": "2021 — 2023",
-      "company": "Previous Company",
-      "role": "Front-End Developer",
-      "description": "Crafted responsive and accessible interfaces, integrated REST APIs, and improved performance across production web apps."
+      "period": "Aug 2013 — Aug 2019",
+      "company": "Capgemini Brasil",
+      "role": "Senior System Analyst",
+      "description": "Designed and developed JavaFX desktop solutions and REST APIs (Jersey) with automated update agents. Implemented cloud-based monitoring via Firebase Functions and engineered Python-based IoT integrations for RFID and SmartCard (HID) systems."
     },
     {
-      "period": "2019 — 2021",
-      "company": "Earlier Company",
-      "role": "Junior Developer",
-      "description": "Contributed to the development of internal tools and client-facing features, learning best practices in software engineering."
+      "period": "Aug 2012 — Aug 2013",
+      "company": "Cast Informática",
+      "role": "Senior Java Developer",
+      "description": "Development of enterprise applications for the Brazilian Health Ministry using Java, Swing, EJB, Oracle DB, and Spring."
     },
     {
-      "period": "2018 — 2019",
-      "company": "Internship Co.",
-      "role": "Intern — Web Development",
-      "description": "Supported development teams, fixed bugs, and built small features under mentorship in a fast-paced startup environment."
+      "period": "Aug 2008 — Aug 2012",
+      "company": "Capgemini Brasil (CPM Braxis)",
+      "role": "System Analyst",
+      "description": "Development of management applications for Oi Telecom using Java, C#, PHP, C++, Delphi, and Richfaces."
     }
   ],
   "ui": {
@@ -66,13 +74,13 @@
     ],
     "sections": {
       "beyondTheCode": "Beyond the code",
-      "experience": { "title": "Experience",  "subtitle": "My professional path"       },
-      "skills":     { "title": "Skills",      "subtitle": "Technologies I work with"   },
-      "contact":    { "title": "Contact",     "subtitle": "Let's connect"              }
+      "experience": { "title": "Experience",  "subtitle": "18+ years of professional path"   },
+      "skills":     { "title": "Skills",      "subtitle": "Technologies I work with"         },
+      "contact":    { "title": "Contact",     "subtitle": "Let's connect"                    }
     },
     "meta": {
-      "title":       "Felipe Guimarães Silva | Software Developer",
-      "description": "Professional portfolio of Felipe Guimarães Silva — software developer."
+      "title":       "Felipe Silva | Senior Software Engineer",
+      "description": "Senior Software Engineer with 18+ years of experience. Specializing in distributed systems, Big Data, and AI-driven development."
     }
   }
 }

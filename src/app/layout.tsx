@@ -14,11 +14,11 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Felipe Guimarães Silva | Software Developer",
-  description: "Professional portfolio of Felipe Guimarães Silva — software developer.",
+  title: "Felipe Silva | Senior Software Engineer",
+  description: "Senior Software Engineer with 18+ years of experience. Specializing in distributed systems, Big Data, and AI-driven development.",
   openGraph: {
-    title: "Felipe Guimarães Silva | Software Developer",
-    description: "Professional portfolio of Felipe Guimarães Silva — software developer.",
+    title: "Felipe Silva | Senior Software Engineer",
+    description: "Senior Software Engineer with 18+ years of experience. Specializing in distributed systems, Big Data, and AI-driven development.",
     type: "website",
   },
 };
