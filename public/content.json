@@ -4,7 +4,6 @@
     "name": "Felipe Silva",
     "photo": "/images/photo-placeholder.jpg",
     "role": "Senior Software Engineer",
-    "email": "felipeguimaraesesilva@gmail.com",
     "github": "https://github.com/felipeguimaraesesilva",
     "linkedin": "https://www.linkedin.com/in/felipe-guimaraes-silva/",
     "location": "Montreal, QC, Canada",
@@ -39,24 +38,28 @@
     {
       "period": "Aug 2019 — Present",
       "company": "Avenue Code",
+      "website": "https://www.avenuecode.com",
       "role": "Senior Software Engineer — Consultant for eBay",
       "description": "6-year continuous engagement at eBay (Tier-1 client). Leading architectural decisions for SEO and process planning ecosystems. Architected mission-critical canonical URL infrastructure and distributed systems processing massive data volumes for millions of products globally. Integrated AI-driven workflows and LLMs to accelerate engineering productivity. Responsible for technical interviews and talent pipeline optimization."
     },
     {
       "period": "Aug 2013 — Aug 2019",
       "company": "Capgemini Brasil",
+      "website": "https://www.capgemini.com",
       "role": "Senior System Analyst",
       "description": "Designed and developed JavaFX desktop solutions and REST APIs (Jersey) with automated update agents. Implemented cloud-based monitoring via Firebase Functions and engineered Python-based IoT integrations for RFID and SmartCard (HID) systems."
     },
     {
       "period": "Aug 2012 — Aug 2013",
       "company": "Cast Informática",
+      "website": "https://www.cast.com.br",
       "role": "Senior Java Developer",
       "description": "Development of enterprise applications for the Brazilian Health Ministry using Java, Swing, EJB, Oracle DB, and Spring."
     },
     {
       "period": "Aug 2008 — Aug 2012",
       "company": "Capgemini Brasil (CPM Braxis)",
+      "website": "https://www.capgemini.com",
       "role": "System Analyst",
       "description": "Development of management applications for Oi Telecom using Java, C#, PHP, C++, Delphi, and Richfaces."
     }

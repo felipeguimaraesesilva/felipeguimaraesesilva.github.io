@@ -32,7 +32,24 @@ function ExperienceEntry({ exp, align }: { exp: Experience; align: "left" | "rig
       <Typography
         sx={{ fontWeight: 800, fontSize: "1.05rem", letterSpacing: "0.04em", color: "text.primary", textTransform: "uppercase" }}
       >
-        {exp.company}
+        {exp.website ? (
+          <Box
+            component="a"
+            href={exp.website}
+            target="_blank"
+            rel="noopener noreferrer"
+            sx={{
+              color: "inherit",
+              textDecoration: "none",
+              "&:hover": { color: "primary.light", textDecoration: "underline" },
+              transition: "color 0.2s",
+            }}
+          >
+            {exp.company}
+          </Box>
+        ) : (
+          exp.company
+        )}
       </Typography>
       <Typography
         variant="body2"
