@@ -29,12 +29,6 @@ To update the portfolio content, **edit only `public/content.json`** — no comp
 
 ## Getting Started
 
-```bash
-npm install
-npm run dev       # http://localhost:3000
-npm run build     # static export
-npm run lint      # ESLint
-```
 
 ## Architecture Notes
 
