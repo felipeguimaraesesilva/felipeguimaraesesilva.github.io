@@ -1,22 +1,11 @@
 import type { NextConfig } from "next";
 
-const securityHeaders = [
-  { key: "X-Content-Type-Options",  value: "nosniff" },
-  { key: "X-Frame-Options",         value: "DENY" },
-  { key: "X-XSS-Protection",        value: "1; mode=block" },
-  { key: "Referrer-Policy",         value: "strict-origin-when-cross-origin" },
-  { key: "Permissions-Policy",      value: "camera=(), microphone=(), geolocation=()" },
-];
-
 const nextConfig: NextConfig = {
-  async headers() {
-    return [
-      {
-        source: "/:path*",
-        headers: securityHeaders,
-      },
-    ];
-  },
+  // Static HTML export for GitHub Pages
+  output: "export",
+
+  // Security headers only apply when running as a Next.js server (not static export).
+  // For GitHub Pages, consider a reverse proxy or Cloudflare for HTTP headers.
 };
 
 export default nextConfig;
