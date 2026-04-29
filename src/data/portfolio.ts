@@ -18,6 +18,7 @@ export interface Band {
   description: string;
   since: string;
   instagram: string;
+  website?: string;
 }
 
 export interface SkillCategory {

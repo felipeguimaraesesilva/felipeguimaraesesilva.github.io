@@ -117,7 +117,7 @@ export function ExperienceSection() {
               left: 0,
               right: 0,
               display: "grid",
-              gridTemplateColumns: "1fr 40px 1fr",
+              gridTemplateColumns: "1fr 80px 1fr",
               alignItems: "flex-start",
             }}
           >

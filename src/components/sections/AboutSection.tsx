@@ -9,8 +9,8 @@ import Tooltip from "@mui/material/Tooltip";
 import Divider from "@mui/material/Divider";
 import Chip from "@mui/material/Chip";
 import EmailIcon from "@mui/icons-material/Email";
-import MusicNoteIcon from "@mui/icons-material/MusicNote";
 import InstagramIcon from "@mui/icons-material/Instagram";
+import LanguageIcon from "@mui/icons-material/Language";
 import { GithubIcon, LinkedinIcon } from "@/components/ui/SocialIcons";
 import Image from "next/image";
 
@@ -212,16 +212,18 @@ export function AboutSection() {
                   width: 44,
                   height: 44,
                   borderRadius: 2.5,
-                  background: "linear-gradient(135deg, rgba(59,130,246,0.18), rgba(14,165,233,0.12))",
-                  border: "1px solid rgba(59,130,246,0.2)",
-                  display: "flex",
-                  alignItems: "center",
-                  justifyContent: "center",
+                  overflow: "hidden",
                   flexShrink: 0,
                   mt: 0.25,
+                  position: "relative",
                 }}
               >
-                <MusicNoteIcon sx={{ fontSize: 20, color: "primary.main" }} />
+                <Image
+                  src="/images/band-logo.png"
+                  alt="Band on the Run logo"
+                  fill
+                  style={{ objectFit: "cover" }}
+                />
               </Box>
 
               <Box sx={{ flexGrow: 1 }}>
@@ -268,6 +270,30 @@ export function AboutSection() {
                       }}
                     >
                       <InstagramIcon sx={{ fontSize: 16 }} />
+                    </IconButton>
+                  </Tooltip>
+                )}
+                {band.website && (
+                  <Tooltip title="Band website">
+                    <IconButton
+                      component="a"
+                      href={band.website}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      size="small"
+                      aria-label="Band website"
+                      sx={{
+                        color: "text.disabled",
+                        border: "1px solid",
+                        borderColor: "divider",
+                        borderRadius: 1.5,
+                        width: 32,
+                        height: 32,
+                        "&:hover": { color: "primary.light", borderColor: "primary.light" },
+                        transition: "all 0.2s",
+                      }}
+                    >
+                      <LanguageIcon sx={{ fontSize: 16 }} />
                     </IconButton>
                   </Tooltip>
                 )}
