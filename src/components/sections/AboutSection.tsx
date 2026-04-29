@@ -193,6 +193,14 @@ export function AboutSection() {
             {content?.ui.sections.beyondTheCode}
           </Typography>
 
+          <Box
+            sx={{
+              display: "flex",
+              flexWrap: "wrap",
+              gap: 2,
+              alignItems: "stretch",
+            }}
+          >
           {band && (
             <Box
               sx={{
@@ -204,6 +212,7 @@ export function AboutSection() {
                 border: "1px solid",
                 borderColor: "divider",
                 backgroundColor: "rgba(255,255,255,0.02)",
+                flex: "1 1 320px",
                 maxWidth: 540,
                 transition: "border-color 0.25s",
                 "&:hover": { borderColor: "rgba(59,130,246,0.3)" },
@@ -303,25 +312,24 @@ export function AboutSection() {
             </Box>
           )}
 
-          {sideProjects.length > 0 && (
-            <Box sx={{ display: "flex", flexDirection: "column", gap: 2, mt: band ? 2 : 0 }}>
-              {sideProjects.map((project) => (
-                <Box
-                  key={project.name}
-                  sx={{
-                    display: "flex",
-                    gap: 3,
-                    alignItems: "flex-start",
-                    p: 3,
-                    borderRadius: 3,
-                    border: "1px solid",
-                    borderColor: "divider",
-                    backgroundColor: "rgba(255,255,255,0.02)",
-                    maxWidth: 540,
-                    transition: "border-color 0.25s",
-                    "&:hover": { borderColor: "rgba(59,130,246,0.3)" },
-                  }}
-                >
+          {sideProjects.map((project) => (
+            <Box
+              key={project.name}
+              sx={{
+                display: "flex",
+                gap: 3,
+                alignItems: "flex-start",
+                p: 3,
+                borderRadius: 3,
+                border: "1px solid",
+                borderColor: "divider",
+                backgroundColor: "rgba(255,255,255,0.02)",
+                flex: "1 1 320px",
+                maxWidth: 540,
+                transition: "border-color 0.25s",
+                "&:hover": { borderColor: "rgba(59,130,246,0.3)" },
+              }}
+            >
                   <Box
                     sx={{
                       width: 44,
@@ -413,10 +421,10 @@ export function AboutSection() {
                       )}
                     </Box>
                   </Box>
-                </Box>
-              ))}
             </Box>
-          )}
+          ))}
+
+          </Box> {/* end flex-wrap row */}
         </Section>
       </Box>
     </Box>
