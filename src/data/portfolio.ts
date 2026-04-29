@@ -24,6 +24,7 @@ export interface Experience {
   website?: string;
   role: string;
   description: string;
+  stack?: string[];
 }
 
 export interface SideProject {

@@ -49,18 +49,12 @@ export function SkillsSection() {
         ))}
       </Box>
 
-      {/* Skills pool — all chips always in DOM, visibility animated */}
       <Box sx={skillsPoolSx}>
         {allSkills.map(({ item, category }) => (
           <motion.div
             key={`${category}-${item}`}
-            animate={{
-              opacity: isVisible(category) ? 1 : 0,
-              scale: isVisible(category) ? 1 : 0.75,
-              pointerEvents: isVisible(category) ? "auto" : "none",
-            }}
-            transition={{ duration: 0.2, ease: "easeOut" }}
-            style={{ pointerEvents: isVisible(category) ? "auto" : "none" }}
+            animate={{ opacity: isVisible(category) ? 1 : 0.12 }}
+            transition={{ duration: 0.25, ease: "easeOut" }}
           >
             <Chip label={item} sx={skillsChipSx} />
           </motion.div>

@@ -109,7 +109,7 @@ export const sectionHeadingDividerSx: SxProps<Theme> = {
 
 export const heroContainerSx: SxProps<Theme> = {
   position: "relative",
-  minHeight: { xs: "80vh", md: "90vh" },
+  minHeight: { xs: "70vh", md: "80vh" },
   display: "flex",
   flexDirection: "column",
 };
@@ -122,7 +122,8 @@ export const heroContentSx: SxProps<Theme> = {
   alignItems: "center",
   justifyContent: "center",
   px: { xs: 2, sm: 4, md: 6 },
-  py: { xs: 14, md: 20 },
+  pt: { xs: 14, md: 20 },
+  pb: { xs: 4, md: 6 },
 };
 
 export const heroInnerSx: SxProps<Theme> = {
@@ -138,7 +139,7 @@ export const heroPhotoBoxSx: SxProps<Theme> = {
   flexShrink: 0,
   width: { xs: 180, md: 220 },
   height: { xs: 240, md: 290 },
-  borderRadius: 3,
+  borderRadius: 1.5,
   overflow: "hidden",
   position: "relative",
   boxShadow: "0 8px 40px rgba(0,0,0,0.5)",
@@ -259,6 +260,34 @@ export const experienceEntryDescSx: SxProps<Theme> = {
   lineHeight: 1.8,
   fontSize: "0.87rem",
   mt: 0.5,
+};
+
+export const experienceEntryStackSx: SxProps<Theme> = {
+  display: "flex",
+  flexWrap: "wrap",
+  gap: 0.75,
+  mt: 1.5,
+};
+
+export const experienceEntryStackChipSx: SxProps<Theme> = {
+  height: 22,
+  fontSize: "0.68rem",
+  fontWeight: 500,
+  backgroundColor: "rgba(59,130,246,0.08)",
+  color: "primary.light",
+  border: "1px solid rgba(59,130,246,0.18)",
+  borderRadius: 1,
+};
+
+export const experienceStackCardSx: SxProps<Theme> = {
+  p: 2,
+  borderRadius: 2,
+  border: "1px solid rgba(59,130,246,0.18)",
+  backgroundColor: "rgba(10,10,15,0.7)",
+  backdropFilter: "blur(12px)",
+  display: "flex",
+  flexWrap: "wrap",
+  gap: 0.75,
 };
 
 export const timelineDotSx: SxProps<Theme> = {

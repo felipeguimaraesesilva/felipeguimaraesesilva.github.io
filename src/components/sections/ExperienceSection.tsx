@@ -5,18 +5,21 @@ import { useContent } from "@/context/ContentContext";
 import type { Experience } from "@/data/portfolio";
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
+import Chip from "@mui/material/Chip";
 import {
   experienceEntryPeriodSx,
   experienceEntryCompanySx,
   experienceEntryCompanyLinkSx,
   experienceEntryRoleSx,
   experienceEntryDescSx,
+  experienceEntryStackSx,
+  experienceEntryStackChipSx,
   timelineDotSx,
   timelineMobileLineSx,
   timelineDesktopLineSx,
 } from "@/styles/sx";
 
-const STEP = 200;
+const STEP = 260;
 
 function ExperienceEntry({ exp, align }: { exp: Experience; align: "left" | "right" }) {
   const isLeft = align === "left";
@@ -57,6 +60,13 @@ function ExperienceEntry({ exp, align }: { exp: Experience; align: "left" | "rig
       <Typography variant="body2" color="text.secondary" sx={experienceEntryDescSx}>
         {exp.description}
       </Typography>
+      {exp.stack && exp.stack.length > 0 && (
+        <Box sx={experienceEntryStackSx}>
+          {exp.stack.map((tech) => (
+            <Chip key={tech} label={tech} size="small" sx={experienceEntryStackChipSx} />
+          ))}
+        </Box>
+      )}
     </Box>
   );
 }
@@ -71,7 +81,10 @@ export function ExperienceSection() {
 
   return (
     <Section id="experience">
-      <SectionHeading title={content?.ui.sections.experience.title ?? "Experience"} subtitle={content?.ui.sections.experience.subtitle} />
+      <SectionHeading
+        title={content?.ui.sections.experience.title ?? "Experience"}
+        subtitle={content?.ui.sections.experience.subtitle}
+      />
 
       {/* Mobile */}
       <Box sx={{ display: { xs: "flex", md: "none" }, flexDirection: "column", gap: 5 }}>
