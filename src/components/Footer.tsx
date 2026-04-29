@@ -5,30 +5,19 @@ import Typography from "@mui/material/Typography";
 import IconButton from "@mui/material/IconButton";
 import { GithubIcon, LinkedinIcon } from "@/components/ui/SocialIcons";
 import { useContent } from "@/context/ContentContext";
+import { footerSx, footerInnerSx, footerIconsSx, footerIconButtonSx } from "@/styles/sx";
 
 export function Footer() {
   const content = useContent();
 
   return (
-    <Box
-      component="footer"
-      sx={{ borderTop: "1px solid", borderColor: "divider", py: 4, px: { xs: 2, sm: 4 } }}
-    >
-      <Box
-        sx={{
-          maxWidth: "960px",
-          mx: "auto",
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "space-between",
-          gap: 2,
-        }}
-      >
+    <Box component="footer" sx={footerSx}>
+      <Box sx={footerInnerSx}>
         <Typography variant="body2" color="text.secondary">
           © {new Date().getFullYear()} {content?.personal.name}
         </Typography>
 
-        <Box sx={{ display: "flex", gap: 0.5 }}>
+        <Box sx={footerIconsSx}>
           <IconButton
             component="a"
             href={content?.personal.github ?? "#"}
@@ -36,7 +25,7 @@ export function Footer() {
             rel="noopener noreferrer"
             aria-label="GitHub"
             size="small"
-            sx={{ color: "text.secondary", "&:hover": { color: "text.primary" } }}
+            sx={footerIconButtonSx}
           >
             <GithubIcon size={18} />
           </IconButton>
@@ -47,7 +36,7 @@ export function Footer() {
             rel="noopener noreferrer"
             aria-label="LinkedIn"
             size="small"
-            sx={{ color: "text.secondary", "&:hover": { color: "text.primary" } }}
+            sx={footerIconButtonSx}
           >
             <LinkedinIcon size={18} />
           </IconButton>

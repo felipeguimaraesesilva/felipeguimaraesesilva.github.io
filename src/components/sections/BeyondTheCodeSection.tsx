@@ -8,6 +8,19 @@ import Chip from "@mui/material/Chip";
 import SvgIcon from "@mui/material/SvgIcon";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import Image from "next/image";
+import {
+  beyondOverlineSx,
+  beyondProjectsGridSx,
+  beyondProjectItemSx,
+  beyondProjectLogoBoxSx,
+  beyondProjectIconSpotifySx,
+  beyondProjectIconGithubSx,
+  beyondProjectBodySx,
+  beyondProjectHeaderSx,
+  beyondProjectLinkSx,
+  beyondProjectTagSx,
+  beyondProjectDescSx,
+} from "@/styles/sx";
 
 function SpotifyIcon(props: React.ComponentProps<typeof SvgIcon>) {
   return (
@@ -23,62 +36,41 @@ export function BeyondTheCodeSection() {
 
   return (
     <Section id="beyond">
-      <Typography
-        variant="overline"
-        sx={{ color: "text.disabled", letterSpacing: "0.2em", fontSize: "0.68rem", display: "block", mb: 3 }}
-      >
+      <Typography variant="overline" sx={beyondOverlineSx}>
         {content?.ui.sections.beyondTheCode}
       </Typography>
 
-      <Box sx={{ display: "flex", flexWrap: "wrap", gap: 4 }}>
+      <Box sx={beyondProjectsGridSx}>
         {sideProjects.map((project) => (
-          <Box key={project.name} sx={{ display: "flex", gap: 2.5, alignItems: "flex-start", flex: "1 1 280px", maxWidth: 480 }}>
+          <Box key={project.name} sx={beyondProjectItemSx}>
             {/* Icon / logo */}
             {project.logo ? (
-              <Box sx={{ width: 44, height: 44, borderRadius: 2.5, overflow: "hidden", flexShrink: 0, mt: 0.25, position: "relative" }}>
+              <Box sx={beyondProjectLogoBoxSx}>
                 <Image src={project.logo} alt={`${project.name} logo`} fill style={{ objectFit: "cover" }} />
               </Box>
             ) : (
-              <Box sx={{
-                width: 44, height: 44, borderRadius: 2.5,
-                background: project.type === "spotify"
-                  ? "linear-gradient(135deg, rgba(30,215,96,0.18), rgba(30,215,96,0.08))"
-                  : "linear-gradient(135deg, rgba(59,130,246,0.18), rgba(14,165,233,0.12))",
-                border: `1px solid ${project.type === "spotify" ? "rgba(30,215,96,0.25)" : "rgba(59,130,246,0.2)"}`,
-                display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0, mt: 0.25,
-              }}>
+              <Box sx={project.type === "spotify" ? beyondProjectIconSpotifySx : beyondProjectIconGithubSx}>
                 {project.type === "spotify"
                   ? <SpotifyIcon sx={{ fontSize: 22, color: "#1ed760" }} />
                   : <GitHubIcon sx={{ fontSize: 20, color: "primary.main" }} />}
               </Box>
             )}
 
-            <Box sx={{ flexGrow: 1 }}>
-              <Box sx={{ display: "flex", alignItems: "center", gap: 1.5, mb: 0.5 }}>
+            <Box sx={beyondProjectBodySx}>
+              <Box sx={beyondProjectHeaderSx}>
                 <Typography
                   component="a"
                   href={project.website ?? project.spotify ?? project.github ?? "#"}
                   target="_blank"
                   rel="noopener noreferrer"
-                  sx={{
-                    fontWeight: 700,
-                    color: "text.primary",
-                    fontSize: "0.97rem",
-                    textDecoration: "none",
-                    "&:hover": { color: "primary.light" },
-                    transition: "color 0.2s",
-                  }}
+                  sx={beyondProjectLinkSx}
                 >
                   {project.name}
                 </Typography>
-                <Chip
-                  label={project.tag}
-                  size="small"
-                  sx={{ height: 20, fontSize: "0.62rem", fontWeight: 500, backgroundColor: "rgba(14,165,233,0.08)", color: "secondary.light", border: "1px solid rgba(14,165,233,0.18)" }}
-                />
+                <Chip label={project.tag} size="small" sx={beyondProjectTagSx} />
               </Box>
 
-              <Typography variant="body2" color="text.secondary" sx={{ lineHeight: 1.75, fontSize: "0.86rem" }}>
+              <Typography variant="body2" color="text.secondary" sx={beyondProjectDescSx}>
                 {project.description}
               </Typography>
             </Box>

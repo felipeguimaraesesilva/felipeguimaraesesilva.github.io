@@ -4,6 +4,12 @@ import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
+import {
+  sectionBoxSx,
+  sectionHeadingWrapperSx,
+  sectionHeadingTitleSx,
+  sectionHeadingDividerSx,
+} from "@/styles/sx";
 
 interface SectionProps {
   id: string;
@@ -15,18 +21,7 @@ export function Section({ id, children }: SectionProps) {
   const isInView = useInView(ref, { once: true, margin: "-80px" });
 
   return (
-    <Box
-      component="section"
-      id={id}
-      ref={ref}
-      sx={{
-        py: { xs: 6, md: 9 },
-        px: { xs: 2, sm: 4, md: 6 },
-        maxWidth: "960px",
-        mx: "auto",
-        width: "100%",
-      }}
-    >
+    <Box component="section" id={id} ref={ref} sx={sectionBoxSx}>
       <motion.div
         initial={{ opacity: 0, y: 32 }}
         animate={isInView ? { opacity: 1, y: 0 } : {}}
@@ -45,15 +40,10 @@ interface SectionHeadingProps {
 
 export function SectionHeading({ title, subtitle }: SectionHeadingProps) {
   return (
-    <Box sx={{ mb: 5 }}>
+    <Box sx={sectionHeadingWrapperSx}>
       <Typography
         variant="h4"
-        sx={{
-          fontWeight: 700,
-          letterSpacing: "-0.02em",
-          color: "text.primary",
-          mb: subtitle ? 0.75 : 0,
-        }}
+        sx={{ ...sectionHeadingTitleSx, mb: subtitle ? 0.75 : 0 }}
       >
         {title}
       </Typography>
@@ -62,13 +52,7 @@ export function SectionHeading({ title, subtitle }: SectionHeadingProps) {
           {subtitle}
         </Typography>
       )}
-      <Box
-        sx={{
-          mt: 2,
-          height: "1px",
-          background: "linear-gradient(90deg, rgba(59,130,246,0.6), transparent)",
-        }}
-      />
+      <Box sx={sectionHeadingDividerSx} />
     </Box>
   );
 }

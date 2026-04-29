@@ -49,13 +49,12 @@ export default function Home() {
     <>
       <Navbar />
       <main>
-        <AboutSection />
-
-        <SectionBg image="/images/bg-workspace.jpg" position="center" opacity={0.06}>
+        <SectionBg image="/images/bg-portrait.jpg" position="center top" opacity={0.07}>
+          <AboutSection />
           <ExperienceSection />
         </SectionBg>
 
-        <SectionBg image="/images/bg-contact.jpg" position="center" opacity={0.07}>
+        <SectionBg image="/images/bg-workspace.jpg" position="center" opacity={0.06}>
           <SkillsSection />
           <BeyondTheCodeSection />
           <ContactSection />

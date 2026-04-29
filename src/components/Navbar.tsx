@@ -15,6 +15,16 @@ import ListItemText from "@mui/material/ListItemText";
 import Typography from "@mui/material/Typography";
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
+import {
+  navbarToolbarSx,
+  navbarLogoSx,
+  navbarDesktopLinksSx,
+  navbarNavButtonSx,
+  navbarMobileToggleSx,
+  navbarDrawerPaperSx,
+  navbarDrawerHeaderSx,
+  navbarDrawerCloseButtonSx,
+} from "@/styles/sx";
 
 export function Navbar() {
   const content = useContent();
@@ -42,29 +52,15 @@ export function Navbar() {
           py: scrolled ? 0 : 0.5,
         }}
       >
-        <Toolbar sx={{ maxWidth: "960px", width: "100%", mx: "auto", px: { xs: 2, sm: 4 } }}>
-          <Typography
-            variant="h6"
-            sx={{ fontWeight: 800, color: "#bfdbfe", flexGrow: 1, letterSpacing: "0.05em" }}
-          >
+        <Toolbar sx={navbarToolbarSx}>
+          <Typography variant="h6" sx={navbarLogoSx}>
             {logo}
           </Typography>
 
           {/* Desktop links */}
-          <Box sx={{ display: { xs: "none", md: "flex" }, gap: 0.5, alignItems: "center" }}>
+          <Box sx={navbarDesktopLinksSx}>
             {navLinks.map((link) => (
-              <Button
-                key={link.href}
-                href={link.href}
-                sx={{
-                  color: "text.disabled",
-                  fontSize: "0.8rem",
-                  fontWeight: 400,
-                  letterSpacing: "0.05em",
-                  px: 2,
-                  "&:hover": { color: "text.primary", backgroundColor: "transparent" },
-                }}
-              >
+              <Button key={link.href} href={link.href} sx={navbarNavButtonSx}>
                 {link.label}
               </Button>
             ))}
@@ -72,7 +68,7 @@ export function Navbar() {
 
           {/* Mobile toggle */}
           <IconButton
-            sx={{ display: { md: "none" }, color: "text.primary" }}
+            sx={navbarMobileToggleSx}
             onClick={() => setMobileOpen(true)}
             aria-label="Open menu"
           >
@@ -86,19 +82,10 @@ export function Navbar() {
         anchor="right"
         open={mobileOpen}
         onClose={() => setMobileOpen(false)}
-        slotProps={{
-          paper: {
-            sx: {
-              width: 260,
-              backgroundColor: "rgba(10, 10, 15, 0.97)",
-              backdropFilter: "blur(20px)",
-              borderLeft: "1px solid rgba(255,255,255,0.06)",
-            },
-          },
-        }}
+        slotProps={{ paper: { sx: navbarDrawerPaperSx } }}
       >
-        <Box sx={{ display: "flex", justifyContent: "flex-end", p: 2 }}>
-          <IconButton onClick={() => setMobileOpen(false)} sx={{ color: "text.secondary" }}>
+        <Box sx={navbarDrawerHeaderSx}>
+          <IconButton onClick={() => setMobileOpen(false)} sx={navbarDrawerCloseButtonSx}>
             <CloseIcon />
           </IconButton>
         </Box>
