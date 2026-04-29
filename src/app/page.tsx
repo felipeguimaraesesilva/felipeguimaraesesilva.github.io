@@ -54,9 +54,10 @@ export default function Home() {
           <ExperienceSection />
         </SectionBg>
 
-        <SkillsSection />
-
-        <ContactSection />
+        <SectionBg image="/images/bg-contact.jpg" position="center" opacity={0.07}>
+          <SkillsSection />
+          <ContactSection />
+        </SectionBg>
       </main>
       <Footer />
     </>
