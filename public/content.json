@@ -1,0 +1,78 @@
+{
+  "personal": {
+    "greeting": "Olá, me chamo",
+    "name": "Felipe Guimarães",
+    "role": "UX/UI DESIGNER E DESENVOLVEDOR WEB",
+    "email": "seu@email.com",
+    "github": "https://github.com/felipeguimaraesesilva",
+    "linkedin": "https://linkedin.com/in/seulinkedin",
+    "location": "Brazil",
+    "competencies": "I'm a full-stack developer with hands-on experience building scalable web applications and APIs. I enjoy working across the stack — from crafting intuitive interfaces to designing robust back-end systems.\n\nMy core strengths include TypeScript, React, Next.js, Node.js, and PostgreSQL. I care deeply about code quality, performance, and delivering products that actually make a difference.\n\nI thrive in collaborative, agile environments and I'm always looking to learn and grow with every project I take on."
+  },
+  "band": {
+    "name": "Band Name",
+    "genre": "Rock / Alternative",
+    "description": "A side project I'm deeply passionate about. We write and perform original music, blending rock with electronic elements. Playing live, recording, and creating together keeps me grounded outside of the screen.",
+    "since": "2018",
+    "instagram": "https://instagram.com/suabanda"
+  },
+  "skillCategories": [
+    {
+      "category": "Frontend",
+      "items": ["TypeScript", "React", "Next.js", "HTML & CSS"]
+    },
+    {
+      "category": "Backend",
+      "items": ["Node.js", "Python", "PostgreSQL", "REST APIs"]
+    },
+    {
+      "category": "DevOps & Tools",
+      "items": ["Docker", "Git", "Linux", "CI/CD"]
+    }
+  ],
+  "experiences": [
+    {
+      "period": "2023 — Present",
+      "company": "Current Company",
+      "role": "Full-Stack Developer",
+      "description": "Building and maintaining scalable web applications, collaborating with agile teams, and delivering high-quality features across the full stack."
+    },
+    {
+      "period": "2021 — 2023",
+      "company": "Previous Company",
+      "role": "Front-End Developer",
+      "description": "Crafted responsive and accessible interfaces, integrated REST APIs, and improved performance across production web apps."
+    },
+    {
+      "period": "2019 — 2021",
+      "company": "Earlier Company",
+      "role": "Junior Developer",
+      "description": "Contributed to the development of internal tools and client-facing features, learning best practices in software engineering."
+    },
+    {
+      "period": "2018 — 2019",
+      "company": "Internship Co.",
+      "role": "Intern — Web Development",
+      "description": "Supported development teams, fixed bugs, and built small features under mentorship in a fast-paced startup environment."
+    }
+  ],
+  "ui": {
+    "logo": "FGS",
+    "nav": [
+      { "href": "#about",      "label": "About"      },
+      { "href": "#experience", "label": "Experience" },
+      { "href": "#skills",     "label": "Skills"     },
+      { "href": "#contact",    "label": "Contact"    }
+    ],
+    "sections": {
+      "beyondTheCode": "Beyond the code",
+      "experience": { "title": "Experience",  "subtitle": "My professional path"       },
+      "skills":     { "title": "Skills",      "subtitle": "Technologies I work with"   },
+      "contact":    { "title": "Contact",     "subtitle": "Let's connect"              }
+    },
+    "meta": {
+      "title":       "Felipe Guimarães Silva | Software Developer",
+      "description": "Professional portfolio of Felipe Guimarães Silva — software developer."
+    }
+  }
+}
