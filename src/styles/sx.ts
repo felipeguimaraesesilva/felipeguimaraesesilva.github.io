@@ -1,5 +1,29 @@
 import type { SxProps, Theme } from "@mui/material/styles";
 
+// ── Language switcher ─────────────────────────────────────────────────────────
+
+export const langSwitcherSx: SxProps<Theme> = {
+  display: "flex",
+  alignItems: "center",
+  gap: 0.25,
+  mr: 1.5,
+};
+
+export const langButtonSx = (active: boolean): SxProps<Theme> => ({
+  minWidth: 0,
+  px: 1,
+  py: 0.25,
+  fontSize: "0.72rem",
+  fontWeight: active ? 700 : 400,
+  letterSpacing: "0.08em",
+  color: active ? "#bfdbfe" : "text.disabled",
+  borderRadius: 1,
+  backgroundColor: active ? "rgba(59,130,246,0.12)" : "transparent",
+  border: active ? "1px solid rgba(59,130,246,0.3)" : "1px solid transparent",
+  "&:hover": { color: "text.primary", backgroundColor: "rgba(59,130,246,0.08)" },
+  transition: "all 0.2s",
+});
+
 // ── Navbar ────────────────────────────────────────────────────────────────────
 
 export const navbarToolbarSx: SxProps<Theme> = {

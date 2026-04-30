@@ -7,14 +7,14 @@
     "github": "https://github.com/felipeguimaraesesilva",
     "linkedin": "https://www.linkedin.com/in/felipe-guimaraes-silva/",
     "location": "Montreal, QC, Canada",
-    "competencies": "Senior Software Engineer with 18+ years of experience delivering high-complexity systems and distributed processing at global industry leaders — including an 8-year tenure at Capgemini and 6+ years as a consultant at Avenue Code, currently driving engineering excellence for eBay.\n\nProven expertise in mission-critical, high-availability systems, transforming massive data volumes into resilient business solutions. Solid background in architectural best practices, CI/CD pipelines, and AI-driven development.\n\nFluent in English, actively improving French (B2 Certificate — YMCA International Language School). Currently based in Montreal."
+    "competencies": "Senior Software Engineer with 18+ years of experience delivering high-complexity systems and distributed processing for global industry leaders — including an 8-year tenure at Capgemini and 6+ years as a consultant at Avenue Code, currently driving engineering excellence for eBay.\n\nProven expertise in mission-critical, high-availability systems, transforming massive data volumes into resilient business solutions. Solid background in architectural best practices, CI/CD pipelines, and AI-driven development.\n\nFluent in English, actively improving French (B2 Certificate). \n\nCurrently based in Montreal."
   },
   "sideProjects": [
     {
       "name": "Band on the Run",
       "tag": "Music",
       "type": "band",
-      "description": "Beyond engineering, music has always been a creative outlet.",
+      "description": "Music has always been my primary creative outlet and a vital part of my life outside of engineering.",
       "logo": "/images/band-logo.png",
       "instagram": "",
       "website": "https://www.bandontherunmusic.com/"
@@ -23,67 +23,193 @@
   "skillCategories": [
     {
       "category": "Backend & Data",
-      "items": ["Java 8-21", "Spring Framework", "Spring Boot", "Spring Batch", "Spring AI", "Python", "EJB", "JavaFX", "REST APIs", "SOAP", "MySQL", "NoSQL", "Oracle DB", "Kafka"]
+      "items": [
+        "Java 8-21",
+        "Spring Framework",
+        "Spring Boot",
+        "Spring Batch",
+        "Spring AI",
+        "Python",
+        "EJB",
+        "JavaFX",
+        "REST APIs",
+        "SOAP",
+        "MySQL",
+        "NoSQL",
+        "Oracle DB",
+        "Kafka"
+      ]
     },
     {
       "category": "Big Data & Cloud",
-      "items": ["GCP", "GCP Pub/Sub", "Hadoop", "Hive", "Apache Spark", "SparkSQL", "PySpark", "Apache Flink", "Apache Airflow", "Firebase"]
+      "items": [
+        "GCP",
+        "GCP Pub/Sub",
+        "Hadoop",
+        "Hive",
+        "Apache Spark",
+        "SparkSQL",
+        "PySpark",
+        "Apache Flink",
+        "Apache Airflow",
+        "Firebase"
+      ]
     },
     {
       "category": "Engineering & Quality",
-      "items": ["CI/CD Pipelines", "Technical Architecture", "Infrastructure Migration", "Maven", "Jenkins", "Git", "Scrum", "Automated Testing", "Test Pyramid", "Contract Testing", "Pact", "Spring Cloud Contract", "Claude", "GitHub Copilot", "Cline"]
+      "items": [
+        "CI/CD Pipelines",
+        "Technical Architecture",
+        "Infrastructure Migration",
+        "Maven",
+        "Jenkins",
+        "Git",
+        "Scrum",
+        "Automated Testing",
+        "Test Pyramid",
+        "Contract Testing",
+        "Pact",
+        "Spring Cloud Contract",
+        "Claude Code",
+        "GitHub Copilot",
+        "Cline"
+      ]
     }
   ],
   "experiences": [
     {
-      "period": "Aug 2019 — Present",
-      "company": "Avenue Code",
-      "website": "https://www.avenuecode.com",
+      "period": "Aug 2020 — Present",
+      "company": "Avenue Code CANADA",
+      "location": "Montreal, QC (Current) | Brazil",
+      "website": "https://avenuecode.com",
+      "role": "Senior Software Engineer — Lead Consultant for eBay",
+      "description": "Leading architectural decisions and high-impact solutions for eBay's SEO/AEO ecosystems. Engineered mission-critical canonical URL infrastructure and distributed systems processing massive data volumes for global search visibility. Pioneered AI-driven workflows and LLM integration (Spring AI) to boost engineering productivity. Additionally, optimized talent acquisition by developing a high-efficiency technical interview process for the eBay pipeline.",
+      "stack": [
+        "Java",
+        "Spring Boot",
+        "Spring AI",
+        "Spring Batch",
+        "GCP",
+        "Pub/Sub",
+        "Spark",
+        "Apache Flink",
+        "Apache Airflow",
+        "Kafka",
+        "Pact",
+        "LLMs",
+        "ClaudeCode/Copilot/Cline/Codex/Gemini",
+        "Jenkins",
+        "GitHub",
+        "Scrum",
+        "GitHub Actions",
+        "CI/CD Pipelines"
+
+      ]
+    },
+    {
+      "period": "Aug 2019 — Aug 2020",
+      "company": "Avenue Code Brazil",
+      "website": "https://avenuecode.com",
       "role": "Senior Software Engineer — Consultant for eBay",
-      "description": "6-year continuous engagement at eBay (Tier-1 client). Leading architectural decisions for SEO and process planning ecosystems. Architected mission-critical canonical URL infrastructure and distributed systems processing massive data volumes for millions of products globally. Integrated AI-driven workflows to accelerate engineering productivity. Responsible for technical interviews and talent pipeline optimization.",
-      "stack": ["Java", "Spring Boot", "Spring AI", "Apache Spark", "GCP", "Kafka", "LLMs", "GitHub Copilot"]
+      "description": "Acted as a technical consultant leading the development of solutions for purchase planning and product distribution. Architected the transition from legacy Java/Spring systems to a modern microservices architecture using Spring Boot, focusing on process agility and system scalability.",
+      "stack": [
+        "Java",
+        "Spring Boot",
+        "Microservices",
+        "MongoDB",
+        "RabbitMQ",
+        "Azure",
+        "Jenkins",
+        "Cucumber",
+        "JUnit"
+      ]
     },
     {
       "period": "Aug 2013 — Aug 2019",
-      "company": "Capgemini Brasil",
+      "company": "Capgemini Brazil",
       "website": "https://www.capgemini.com",
       "role": "Senior System Analyst",
       "description": "Designed and developed desktop solutions and REST APIs with automated update agents. Implemented cloud-based monitoring and engineered IoT integrations for RFID and SmartCard (HID) systems.",
-      "stack": ["Java", "JavaFX", "REST APIs", "Jersey", "Firebase", "Python", "IoT/RFID"]
+      "stack": [
+        "Java",
+        "JavaFX",
+        "REST APIs",
+        "Firebase",
+        "Raspberry Pi",
+        "Python",
+        "IoT/RFID"
+      ]
     },
     {
       "period": "Aug 2012 — Aug 2013",
       "company": "Cast Informática",
-      "website": "https://www.cast.com.br",
+      "website": "https://castgroup.com.br",
       "role": "Senior Java Developer",
-      "description": "Development of enterprise applications for the Brazilian Health Ministry.",
-      "stack": ["Java", "Swing", "EJB", "Oracle DB", "Spring"]
+      "description": "Led the development of mission-critical applications for the Brazilian Ministry of Health, including mortality control and indigenous health monitoring systems. Acted as a key technical lead in designing reusable components across multiple federal projects and architected solutions for government legislation management and digital publishing.",
+      "stack": [
+        "Java",
+        "Spring",
+        "EJB",
+        "Swing",
+        "Oracle DB"
+      ]
     },
     {
-      "period": "Aug 2008 — Aug 2012",
-      "company": "Capgemini Brasil (CPM Braxis)",
-      "website": "https://www.capgemini.com",
-      "role": "System Analyst",
-      "description": "Development of management applications for Oi Telecom.",
-      "stack": ["Java", "C#", "PHP", "C++", "Delphi", "RichFaces"]
+      "period": "Jan 2008 — Jul 2012",
+      "company": "Capgemini (formerly CPM Braxis)",
+      "website": "https://capgemini.com",
+      "role": "Systems Analyst",
+      "description": "Delivered high-impact solutions within a fast-paced Software Factory environment for major Telecom players (Oi, Brasil Telecom, Telemig Celular). Engineered anti-fraud control systems and high-traffic web portals. Specialized in cross-platform integrations between Java ecosystems and enterprise workflow tools (Remedy), while managing diverse management applications across multiple tech stacks.",
+      "stack": [
+        "Java",
+        "Struts",
+        "C#",
+        "C++",
+        "PHP",
+        "Delphi",
+        "Richfaces",
+        "SVN",
+        "Oracle DB"
+      ]
     }
   ],
   "ui": {
     "logo": "",
     "nav": [
-      { "href": "#about",      "label": "About"      },
-      { "href": "#experience", "label": "Experience" },
-      { "href": "#skills",     "label": "Skills"     },
-      { "href": "#contact",    "label": "Contact"    }
+      {
+        "href": "#about",
+        "label": "About"
+      },
+      {
+        "href": "#experience",
+        "label": "Experience"
+      },
+      {
+        "href": "#skills",
+        "label": "Skills"
+      },
+      {
+        "href": "#contact",
+        "label": "Contact"
+      }
     ],
     "sections": {
       "beyondTheCode": "Beyond the code",
-      "experience": { "title": "Experience",  "subtitle": "18+ years of professional path"   },
-      "skills":     { "title": "Skills",      "subtitle": "Technologies I work with"         },
-      "contact":    { "title": "Contact",     "subtitle": "Let's connect"                    }
+      "experience": {
+        "title": "Experience",
+        "subtitle": "18+ years of professional path"
+      },
+      "skills": {
+        "title": "Skills",
+        "subtitle": "Technologies I work with"
+      },
+      "contact": {
+        "title": "Contact",
+        "subtitle": "Let's connect"
+      }
     },
     "meta": {
-      "title":       "Felipe Silva | Senior Software Engineer",
+      "title": "Felipe Silva | Senior Software Engineer",
       "description": "Senior Software Engineer with 18+ years of experience. Specializing in distributed systems, Big Data, and AI-driven development."
     }
   }

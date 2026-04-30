@@ -19,7 +19,7 @@ import {
   timelineDesktopLineSx,
 } from "@/styles/sx";
 
-const STEP = 260;
+const STEP = 320;
 
 function ExperienceEntry({ exp, align }: { exp: Experience; align: "left" | "right" }) {
   const isLeft = align === "left";
@@ -34,6 +34,15 @@ function ExperienceEntry({ exp, align }: { exp: Experience; align: "left" | "rig
         maxWidth: 320,
         ml: isLeft ? "auto" : 0,
         mr: isLeft ? 0 : "auto",
+        borderRadius: 2,
+        p: 1.5,
+        backdropFilter: "blur(0px)",
+        transition: "box-shadow 0.35s ease, backdrop-filter 0.35s ease, transform 0.35s ease",
+        "&:hover": {
+          boxShadow: "0 0 0 1px rgba(59,130,246,0.18)",
+          backdropFilter: "blur(10px)",
+          transform: "scale(1.06)",
+        },
       }}
     >
       <Typography variant="caption" sx={experienceEntryPeriodSx}>

@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { useContent } from "@/context/ContentContext";
+import { useContent, useLocale } from "@/context/ContentContext";
 import AppBar from "@mui/material/AppBar";
 import Toolbar from "@mui/material/Toolbar";
 import Box from "@mui/material/Box";
@@ -24,10 +24,13 @@ import {
   navbarDrawerPaperSx,
   navbarDrawerHeaderSx,
   navbarDrawerCloseButtonSx,
+  langSwitcherSx,
+  langButtonSx,
 } from "@/styles/sx";
 
 export function Navbar() {
   const content = useContent();
+  const { locale, setLocale } = useLocale();
   const navLinks = content?.ui.nav ?? [];
   const logo = content?.ui.logo ?? "";
 
@@ -53,6 +56,17 @@ export function Navbar() {
         }}
       >
         <Toolbar sx={navbarToolbarSx}>
+          {/* Language switcher — left */}
+          <Box sx={langSwitcherSx}>
+            <Button onClick={() => setLocale("en")} sx={langButtonSx(locale === "en")} disableRipple>
+              EN
+            </Button>
+            <Typography sx={{ color: "text.disabled", fontSize: "0.65rem", lineHeight: 1 }}>|</Typography>
+            <Button onClick={() => setLocale("fr")} sx={langButtonSx(locale === "fr")} disableRipple>
+              FR
+            </Button>
+          </Box>
+
           <Typography variant="h6" sx={navbarLogoSx}>
             {logo}
           </Typography>
