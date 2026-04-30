@@ -36,12 +36,15 @@ function ExperienceEntry({ exp, align }: { exp: Experience; align: "left" | "rig
         mr: isLeft ? 0 : "auto",
         borderRadius: 2,
         p: 1.5,
+        position: "relative",
+        zIndex: 1,
         backdropFilter: "blur(0px)",
-        transition: "box-shadow 0.35s ease, backdrop-filter 0.35s ease, transform 0.35s ease",
+        transition: "box-shadow 0.35s ease, backdrop-filter 0.35s ease, transform 0.35s ease, z-index 0s",
         "&:hover": {
           boxShadow: "0 0 0 1px rgba(59,130,246,0.18)",
           backdropFilter: "blur(10px)",
           transform: "scale(1.06)",
+          zIndex: 10,
         },
       }}
     >
@@ -131,11 +134,11 @@ export function ExperienceSection() {
               alignItems: "flex-start",
             }}
           >
-            {i % 2 === 0 ? <ExperienceEntry exp={exp} align="left" /> : <Box />}
+            {i % 2 === 0 ? <ExperienceEntry exp={exp} align="left" /> : <Box sx={{ pointerEvents: "none" }} />}
             <Box sx={{ display: "flex", justifyContent: "center", pt: 0.5 }}>
               <TimelineDot />
             </Box>
-            {i % 2 !== 0 ? <ExperienceEntry exp={exp} align="right" /> : <Box />}
+            {i % 2 !== 0 ? <ExperienceEntry exp={exp} align="right" /> : <Box sx={{ pointerEvents: "none" }} />}
           </Box>
         ))}
       </Box>

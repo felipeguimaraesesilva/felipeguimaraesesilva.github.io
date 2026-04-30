@@ -85,7 +85,7 @@
       "role": "Senior Software Engineer — Lead Consultant for eBay",
       "description": "Leading architectural decisions and high-impact solutions for eBay's SEO/AEO ecosystems. Engineered mission-critical canonical URL infrastructure and distributed systems processing massive data volumes for global search visibility. Pioneered AI-driven workflows and LLM integration (Spring AI) to boost engineering productivity. Additionally, optimized talent acquisition by developing a high-efficiency technical interview process for the eBay pipeline.",
       "stack": [
-        "Java",
+        "Java 8-21",
         "Spring Boot",
         "Spring AI",
         "Spring Batch",

@@ -85,7 +85,7 @@
       "role": "Ingénieur logiciel principal — Consultant expert pour eBay",
       "description": "Direction des décisions architecturales et des solutions à haut impact pour les écosystèmes SEO/AEO d'eBay. Conception d'infrastructures d'URL canoniques critiques et de systèmes distribués traitant des volumes massifs de données pour la visibilité de recherche mondiale. Pionnier dans l'intégration de flux de travail pilotés par l'IA et des LLM (Spring AI) pour accroître la productivité technique. Optimisation de l'acquisition de talents via le développement d'un processus d'entrevue technique hautement efficace.",
       "stack": [
-        "Java",
+        "Java 8-21",
         "Spring Boot",
         "Spring AI",
         "Spring Batch",

@@ -301,6 +301,16 @@ export const experienceEntryStackChipSx: SxProps<Theme> = {
   color: "primary.light",
   border: "1px solid rgba(59,130,246,0.18)",
   borderRadius: 1,
+  cursor: "default",
+  overflow: "visible",
+  transition: "transform 0.2s ease, background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease",
+  "&:hover": {
+    backgroundColor: "rgba(59,130,246,0.22)",
+    color: "#93c5fd",
+    borderColor: "rgba(59,130,246,0.55)",
+    transform: "scale(1.12)",
+    boxShadow: "0 0 8px rgba(59,130,246,0.35)",
+  },
 };
 
 export const experienceStackCardSx: SxProps<Theme> = {
