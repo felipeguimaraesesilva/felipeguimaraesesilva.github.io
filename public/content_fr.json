@@ -172,6 +172,44 @@
       ]
     }
   ],
+  "education": [
+    {
+      "period": "2019 — 2020",
+      "degree": "Diplôme de 2e cycle en architecture logicielle distribuée",
+      "field": "Spécialisation en TI",
+      "institution": "PUC Minas",
+      "location": "Minas Gerais, Brésil",
+      "featured": true
+    },
+    {
+      "period": "2005 — 2010",
+      "degree": "Baccalauréat en systèmes d'information",
+      "field": "TI",
+      "institution": "Colégio Faculdade Cotemig",
+      "location": "Minas Gerais, Brésil",
+      "featured": true
+    },
+    {
+      "period": "Mar 2024 — Déc 2024",
+      "degree": "Français — Intermédiaire 3",
+      "field": "École de langues",
+      "institution": "YMCA International Language School",
+      "location": "Montréal, QC, Canada"
+    },
+    {
+      "period": "Juin 2012 — Sep 2012",
+      "degree": "Architecture Android",
+      "field": "Cours d'extension",
+      "institution": "FrameWork Institution",
+      "location": "Minas Gerais, Brésil"
+    },
+    {
+      "period": "Délivré jan 2025 · Expire jan 2027",
+      "degree": "TEFAQ — TEF pour l'accès au Québec",
+      "field": "Certification linguistique",
+      "institution": "Le français des affaires de la CCI Paris Île-de-France"
+    }
+  ],
   "ui": {
     "logo": "",
     "nav": [
@@ -188,6 +226,10 @@
         "label": "Compétences"
       },
       {
+        "href": "#education",
+        "label": "Formation"
+      },
+      {
         "href": "#contact",
         "label": "Contact"
       }
@@ -201,6 +243,11 @@
       "skills": {
         "title": "Compétences",
         "subtitle": "Technologies avec lesquelles je travaille"
+      },
+      "education": {
+        "title": "Formation",
+        "subtitle": "Parcours académique et certifications",
+        "additionalTraining": "Formation complémentaire"
       },
       "contact": {
         "title": "Contact",

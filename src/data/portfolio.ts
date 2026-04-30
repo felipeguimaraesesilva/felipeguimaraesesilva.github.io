@@ -39,11 +39,21 @@ export interface SideProject {
   spotify?: string;
 }
 
+export interface Education {
+  period: string;
+  degree: string;
+  field?: string;
+  institution: string;
+  location?: string;
+  featured?: boolean;
+}
+
 export interface PortfolioContent {
   personal: Personal;
   sideProjects: SideProject[];
   skillCategories: SkillCategory[];
   experiences: Experience[];
+  education: Education[];
   ui: UI;
 }
 
@@ -55,6 +65,7 @@ export interface NavLink {
 export interface SectionLabel {
   title: string;
   subtitle: string;
+  additionalTraining?: string;
 }
 
 export interface UI {
@@ -64,6 +75,7 @@ export interface UI {
     beyondTheCode: string;
     experience: SectionLabel;
     skills: SectionLabel;
+    education: SectionLabel;
     contact: SectionLabel;
   };
   meta: {

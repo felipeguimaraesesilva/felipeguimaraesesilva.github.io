@@ -173,6 +173,44 @@
       ]
     }
   ],
+  "education": [
+    {
+      "period": "2019 — 2020",
+      "degree": "Postgraduate Degree in Distributed Software Architecture",
+      "field": "IT Specialization",
+      "institution": "PUC Minas",
+      "location": "Minas Gerais, Brazil",
+      "featured": true
+    },
+    {
+      "period": "2005 — 2010",
+      "degree": "Bachelor in Information Systems",
+      "field": "IT",
+      "institution": "Colégio Faculdade Cotemig",
+      "location": "Minas Gerais, Brazil",
+      "featured": true
+    },
+    {
+      "period": "Mar 2024 — Dec 2024",
+      "degree": "Français — Intermédiaire 3",
+      "field": "Language School",
+      "institution": "YMCA International Language School",
+      "location": "Montreal, QC, Canada"
+    },
+    {
+      "period": "Jun 2012 — Sep 2012",
+      "degree": "Android Architecture",
+      "field": "Extension Course",
+      "institution": "FrameWork Institution",
+      "location": "Minas Gerais, Brazil"
+    },
+    {
+      "period": "Issued Jan 2025 · Expires Jan 2027",
+      "degree": "TEFAQ — TEF pour l'accès au Québec",
+      "field": "Language Certification",
+      "institution": "Le français des affaires de la CCI Paris Île-de-France"
+    }
+  ],
   "ui": {
     "logo": "",
     "nav": [
@@ -189,6 +227,10 @@
         "label": "Skills"
       },
       {
+        "href": "#education",
+        "label": "Education"
+      },
+      {
         "href": "#contact",
         "label": "Contact"
       }
@@ -202,6 +244,11 @@
       "skills": {
         "title": "Skills",
         "subtitle": "Technologies I work with"
+      },
+      "education": {
+        "title": "Education",
+        "subtitle": "Academic background & certifications",
+        "additionalTraining": "Additional training"
       },
       "contact": {
         "title": "Contact",

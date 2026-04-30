@@ -506,6 +506,125 @@ export const beyondProjectDescSx: SxProps<Theme> = {
   fontSize: "0.86rem",
 };
 
+// ── Education ─────────────────────────────────────────────────────────────────
+
+export const educationFeaturedGridSx: SxProps<Theme> = {
+  display: "grid",
+  gridTemplateColumns: { xs: "1fr", sm: "1fr 1fr" },
+  gap: 3,
+  mb: 3,
+};
+
+export const educationSecondaryGridSx: SxProps<Theme> = {
+  display: "grid",
+  gridTemplateColumns: { xs: "1fr", sm: "1fr 1fr" },
+  gap: 2,
+};
+
+export const educationFeaturedCardSx: SxProps<Theme> = {
+  display: "flex",
+  flexDirection: "column",
+  gap: 0.6,
+  p: 3,
+  borderRadius: 2,
+  border: "1px solid rgba(59,130,246,0.28)",
+  backgroundColor: "rgba(59,130,246,0.04)",
+  backdropFilter: "blur(8px)",
+  transition: "box-shadow 0.3s ease, border-color 0.3s ease, transform 0.3s ease",
+  "&:hover": {
+    borderColor: "rgba(59,130,246,0.5)",
+    boxShadow: "0 0 0 1px rgba(59,130,246,0.2), 0 4px 20px rgba(59,130,246,0.1)",
+    transform: "translateY(-3px)",
+  },
+};
+
+export const educationSecondaryCardSx: SxProps<Theme> = {
+  display: "flex",
+  flexDirection: "column",
+  gap: 0.4,
+  p: 2,
+  borderRadius: 2,
+  border: "1px solid rgba(255,255,255,0.06)",
+  backgroundColor: "rgba(255,255,255,0.015)",
+  backdropFilter: "blur(4px)",
+  transition: "border-color 0.25s ease",
+  "&:hover": {
+    borderColor: "rgba(255,255,255,0.12)",
+  },
+};
+
+export const educationPeriodSx: SxProps<Theme> = {
+  color: "text.disabled",
+  letterSpacing: "0.12em",
+  fontFamily: "monospace",
+  fontSize: "0.7rem",
+};
+
+export const educationSecondaryPeriodSx: SxProps<Theme> = {
+  color: "text.disabled",
+  letterSpacing: "0.1em",
+  fontFamily: "monospace",
+  fontSize: "0.65rem",
+};
+
+export const educationDegreeSx: SxProps<Theme> = {
+  fontWeight: 700,
+  fontSize: "1rem",
+  color: "text.primary",
+  lineHeight: 1.35,
+  mt: 0.5,
+};
+
+export const educationSecondaryDegreeSx: SxProps<Theme> = {
+  fontWeight: 600,
+  fontSize: "0.82rem",
+  color: "text.secondary",
+  lineHeight: 1.3,
+  mt: 0.25,
+};
+
+export const educationFieldSx: SxProps<Theme> = {
+  color: "primary.light",
+  fontWeight: 500,
+  fontSize: "0.78rem",
+  letterSpacing: "0.02em",
+};
+
+export const educationSecondaryFieldSx: SxProps<Theme> = {
+  color: "text.disabled",
+  fontWeight: 400,
+  fontSize: "0.72rem",
+};
+
+export const educationInstitutionSx: SxProps<Theme> = {
+  color: "text.secondary",
+  fontSize: "0.87rem",
+  fontWeight: 500,
+  mt: 0.25,
+};
+
+export const educationSecondaryInstitutionSx: SxProps<Theme> = {
+  color: "text.disabled",
+  fontSize: "0.76rem",
+  fontWeight: 400,
+  mt: 0.1,
+};
+
+export const educationLocationSx: SxProps<Theme> = {
+  color: "text.disabled",
+  fontSize: "0.72rem",
+  letterSpacing: "0.06em",
+};
+
+export const educationSecondaryLabelSx: SxProps<Theme> = {
+  color: "text.disabled",
+  letterSpacing: "0.14em",
+  fontSize: "0.62rem",
+  textTransform: "uppercase",
+  display: "block",
+  mb: 1,
+};
+
 // ── Contact ───────────────────────────────────────────────────────────────────
 
 export const contactStackSx: SxProps<Theme> = {

@@ -3,6 +3,7 @@ import { Footer } from "@/components/Footer";
 import { AboutSection } from "@/components/sections/AboutSection";
 import { ExperienceSection } from "@/components/sections/ExperienceSection";
 import { SkillsSection } from "@/components/sections/SkillsSection";
+import { EducationSection } from "@/components/sections/EducationSection";
 import { BeyondTheCodeSection } from "@/components/sections/BeyondTheCodeSection";
 import { ContactSection } from "@/components/sections/ContactSection";
 import Box from "@mui/material/Box";
@@ -56,6 +57,7 @@ export default function Home() {
 
         <SectionBg image="/images/bg-workspace.jpg" position="center" opacity={0.06}>
           <SkillsSection />
+          <EducationSection />
           <BeyondTheCodeSection />
           <ContactSection />
         </SectionBg>
