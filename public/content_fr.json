@@ -23,57 +23,27 @@
   "skillCategories": [
     {
       "category": "Backend et Données",
-      "items": [
-        "Java 8-21",
-        "Spring Framework",
-        "Spring Boot",
-        "Spring Batch",
-        "Spring AI",
-        "Python",
-        "EJB",
-        "JavaFX",
-        "REST APIs",
-        "SOAP",
-        "MySQL",
-        "NoSQL",
-        "Oracle DB",
-        "Kafka"
-      ]
+      "levels": {
+        "core": ["Java 8-21", "Spring Boot", "Spring Framework", "Spring Batch", "REST APIs", "MySQL", "Kafka"],
+        "strong": ["Spring AI", "Python", "Oracle DB", "NoSQL", "EJB"],
+        "exposure": ["SOAP", "JavaFX"]
+      }
     },
     {
       "category": "Big Data et Info nuagique",
-      "items": [
-        "GCP",
-        "GCP Pub/Sub",
-        "Hadoop",
-        "Hive",
-        "Apache Spark",
-        "SparkSQL",
-        "PySpark",
-        "Apache Flink",
-        "Apache Airflow",
-        "Firebase"
-      ]
+      "levels": {
+        "core": ["GCP", "Apache Spark", "SparkSQL", "PySpark", "Apache Flink"],
+        "strong": ["GCP Pub/Sub", "Apache Airflow", "Hadoop", "Hive"],
+        "exposure": ["Firebase"]
+      }
     },
     {
       "category": "Ingénierie et Qualité",
-      "items": [
-        "Pipelines CI/CD",
-        "Architecture technique",
-        "Migration d'infrastructure",
-        "Maven",
-        "Jenkins",
-        "Git",
-        "Scrum",
-        "Tests automatisés",
-        "Pyramide de tests",
-        "Tests de contrat",
-        "Pact",
-        "Spring Cloud Contract",
-        "Claude Code",
-        "GitHub Copilot",
-        "Cline"
-      ]
+      "levels": {
+        "core": ["Pipelines CI/CD", "Git", "Jenkins", "Maven", "Scrum", "GitHub Copilot", "Claude Code"],
+        "strong": ["Architecture technique", "Tests automatisés", "Tests de contrat", "Pact", "Spring Cloud Contract", "Pyramide de tests"],
+        "exposure": ["Migration d'infrastructure", "Cline"]
+      }
     }
   ],
   "experiences": [
@@ -242,7 +212,13 @@
       },
       "skills": {
         "title": "Compétences",
-        "subtitle": "Technologies avec lesquelles je travaille"
+        "subtitle": "Technologies avec lesquelles je travaille",
+        "filterAll": "Tout",
+        "levels": [
+          { "id": "core", "label": "Expertise principale", "description": "Stack principale — utilisé quotidiennement en production" },
+          { "id": "strong", "label": "Bonne maîtrise opérationnelle", "description": "Régulièrement appliqué dans des contextes professionnels" },
+          { "id": "exposure", "label": "Exposition complémentaire", "description": "Utilisé dans des projets spécifiques ou en cours d'exploration" }
+        ]
       },
       "education": {
         "title": "Formation",

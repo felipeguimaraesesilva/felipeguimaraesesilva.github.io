@@ -23,57 +23,27 @@
   "skillCategories": [
     {
       "category": "Backend & Data",
-      "items": [
-        "Java 8-21",
-        "Spring Framework",
-        "Spring Boot",
-        "Spring Batch",
-        "Spring AI",
-        "Python",
-        "EJB",
-        "JavaFX",
-        "REST APIs",
-        "SOAP",
-        "MySQL",
-        "NoSQL",
-        "Oracle DB",
-        "Kafka"
-      ]
+      "levels": {
+        "core": ["Java 8-21", "Spring Boot", "Spring Framework", "Spring Batch", "REST APIs", "MySQL", "Kafka"],
+        "strong": ["Spring AI", "Python", "Oracle DB", "NoSQL", "EJB"],
+        "exposure": ["SOAP", "JavaFX"]
+      }
     },
     {
       "category": "Big Data & Cloud",
-      "items": [
-        "GCP",
-        "GCP Pub/Sub",
-        "Hadoop",
-        "Hive",
-        "Apache Spark",
-        "SparkSQL",
-        "PySpark",
-        "Apache Flink",
-        "Apache Airflow",
-        "Firebase"
-      ]
+      "levels": {
+        "core": ["GCP", "Apache Spark", "SparkSQL", "PySpark", "Apache Flink"],
+        "strong": ["GCP Pub/Sub", "Apache Airflow", "Hadoop", "Hive"],
+        "exposure": ["Firebase"]
+      }
     },
     {
       "category": "Engineering & Quality",
-      "items": [
-        "CI/CD Pipelines",
-        "Technical Architecture",
-        "Infrastructure Migration",
-        "Maven",
-        "Jenkins",
-        "Git",
-        "Scrum",
-        "Automated Testing",
-        "Test Pyramid",
-        "Contract Testing",
-        "Pact",
-        "Spring Cloud Contract",
-        "Claude Code",
-        "GitHub Copilot",
-        "Cline"
-      ]
+      "levels": {
+        "core": ["CI/CD Pipelines", "Git", "Jenkins", "Maven", "Scrum", "GitHub Copilot", "Claude Code"],
+        "strong": ["Technical Architecture", "Automated Testing", "Contract Testing", "Pact", "Spring Cloud Contract", "Test Pyramid"],
+        "exposure": ["Infrastructure Migration", "Cline"]
+      }
     }
   ],
   "experiences": [
@@ -243,7 +213,13 @@
       },
       "skills": {
         "title": "Skills",
-        "subtitle": "Technologies I work with"
+        "subtitle": "Technologies I work with",
+        "filterAll": "All",
+        "levels": [
+          { "id": "core", "label": "Core Expertise", "description": "Primary stack — used daily in production systems" },
+          { "id": "strong", "label": "Strong Working Knowledge", "description": "Regularly applied in professional contexts" },
+          { "id": "exposure", "label": "Additional Exposure", "description": "Used in specific projects or actively explored" }
+        ]
       },
       "education": {
         "title": "Education",

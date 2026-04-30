@@ -360,7 +360,39 @@ export const skillsFilterRowSx: SxProps<Theme> = {
   display: "flex",
   flexWrap: "wrap",
   gap: 1,
+  mb: 5,
+};
+
+export const skillsLevelGroupSx: SxProps<Theme> = {
   mb: 4,
+};
+
+export const skillsLevelHeaderSx: SxProps<Theme> = {
+  mb: 2,
+};
+
+export const skillsLevelLabelSx: SxProps<Theme> = {
+  fontWeight: 700,
+  fontSize: "0.72rem",
+  letterSpacing: "0.16em",
+  textTransform: "uppercase",
+  color: "primary.light",
+  display: "block",
+  mb: 0.4,
+};
+
+export const skillsLevelDescSx: SxProps<Theme> = {
+  fontSize: "0.78rem",
+  color: "text.disabled",
+  letterSpacing: "0.01em",
+  display: "block",
+  mb: 1.2,
+};
+
+export const skillsLevelDividerSx: SxProps<Theme> = {
+  height: "1px",
+  background: "linear-gradient(90deg, rgba(59,130,246,0.35), transparent)",
+  mb: 2,
 };
 
 export const skillsPoolSx: SxProps<Theme> = {

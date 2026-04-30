@@ -13,9 +13,17 @@ export interface Personal {
   competencies: string;
 }
 
+export type SkillLevelId = "core" | "strong" | "exposure";
+
+export interface SkillLevelDef {
+  id: SkillLevelId;
+  label: string;
+  description: string;
+}
+
 export interface SkillCategory {
   category: string;
-  items: string[];
+  levels: Record<SkillLevelId, string[]>;
 }
 
 export interface Experience {
@@ -74,7 +82,12 @@ export interface UI {
   sections: {
     beyondTheCode: string;
     experience: SectionLabel;
-    skills: SectionLabel;
+    skills: {
+      title: string;
+      subtitle: string;
+      filterAll: string;
+      levels: SkillLevelDef[];
+    };
     education: SectionLabel;
     contact: SectionLabel;
   };
