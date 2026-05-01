@@ -9,6 +9,28 @@
     "location": "Montréal, QC, Canada",
     "competencies": "Ingénieur logiciel principal avec plus de 18 ans d'expérience dans la livraison de systèmes complexes et de traitement distribué pour des leaders mondiaux — incluant un parcours de 8 ans chez Capgemini et plus de 6 ans comme consultant chez Avenue Code, où je propulse actuellement l'excellence technologique pour eBay.\n\nExpertise reconnue dans les systèmes critiques à haute disponibilité, transformant des volumes massifs de données en solutions d'affaires résilientes. Solide expertise en meilleures pratiques architecturales, pipelines CI/CD et développement piloté par l'IA.\n\nFluide en anglais, j'améliore activement mon français (certificat B2). \n\nActuellement basé à Montréal."
   },
+  "impactStats": [
+    {
+      "value": "18+",
+      "label": "Ans d'ingénierie",
+      "description": "Livraison de systèmes complexes depuis 2008"
+    },
+    {
+      "value": "6+",
+      "label": "Ans chez eBay",
+      "description": "Consultant principal en infrastructure SEO/AEO"
+    },
+    {
+      "value": "Arch",
+      "label": "Migration Lead",
+      "description": "Modernisation complète de l'infrastructure principale d'eBay"
+    },
+    {
+      "value": "Global",
+      "label": "Portée Entreprise",
+      "description": "eBay, Télécoms & secteur public — livraison à l'échelle entreprise"
+    }
+  ],
   "sideProjects": [
     {
       "name": "Band on the Run",
@@ -22,27 +44,27 @@
   ],
   "skillCategories": [
     {
-      "category": "Backend et Données",
+      "category": "Backend & Data",
       "levels": {
-        "core": ["Java 8-21", "Spring Boot", "Spring Framework", "Spring Batch", "REST APIs", "MySQL", "Kafka"],
-        "strong": ["Spring AI", "Python", "Oracle DB", "NoSQL", "EJB"],
+        "core": ["Java 8-21", "Spring Boot", "Spring Batch", "REST", "NoSQL", "Kafka"],
+        "strong": ["Spring AI", "Python", "Oracle DB", "NoSQL", "EJB", "MySQL"],
         "exposure": ["SOAP", "JavaFX"]
       }
     },
     {
-      "category": "Big Data et Info nuagique",
+      "category": "Big Data & Cloud",
       "levels": {
-        "core": ["GCP", "Apache Spark", "SparkSQL", "PySpark", "Apache Flink"],
-        "strong": ["GCP Pub/Sub", "Apache Airflow", "Hadoop", "Hive"],
-        "exposure": ["Firebase"]
+        "core": ["GCP", "Apache Spark", "SparkSQL", "PySpark", "Hadoop" ],
+        "strong": ["GCP Pub/Sub", "Apache Airflow", "Hive", "Apache Flink"],
+        "exposure": ["Firebase", "AWS", "Azure"]
       }
     },
     {
-      "category": "Ingénierie et Qualité",
+      "category": "Engineering & Quality",
       "levels": {
-        "core": ["Pipelines CI/CD", "Git", "Jenkins", "Maven", "Scrum", "GitHub Copilot", "Claude Code"],
-        "strong": ["Architecture technique", "Tests automatisés", "Tests de contrat", "Pact", "Spring Cloud Contract", "Pyramide de tests"],
-        "exposure": ["Migration d'infrastructure", "Cline"]
+        "core": ["CI/CD Pipelines", "Git", "Jenkins", "Maven", "Scrum", "GitHub Copilot", "Claude Code"],
+        "strong": ["Technical Architecture", "Automated Testing", "Test Pyramid"],
+        "exposure": ["Contract Testing", "Pact"]
       }
     }
   ],
@@ -50,7 +72,7 @@
     {
       "period": "Août 2020 — Présent",
       "company": "Avenue Code CANADA",
-      "location": "Montréal, QC (Actuel) | Brésil",
+      "location": "Montréal — Canada",
       "website": "https://avenuecode.com",
       "role": "Ingénieur logiciel principal — Consultant expert pour eBay",
       "description": "Direction des décisions architecturales et des solutions à haut impact pour les écosystèmes SEO/AEO d'eBay. Conception d'infrastructures d'URL canoniques critiques et de systèmes distribués traitant des volumes massifs de données pour la visibilité de recherche mondiale. Pionnier dans l'intégration de flux de travail pilotés par l'IA et des LLM (Spring AI) pour accroître la productivité technique. Optimisation de l'acquisition de talents via le développement d'un processus d'entrevue technique hautement efficace.",
@@ -61,23 +83,25 @@
         "Spring Batch",
         "GCP",
         "Pub/Sub",
-        "Spark",
+        "Hadoop",
+        "SparkSql",
+        "HiveSql",
         "Apache Flink",
         "Apache Airflow",
         "Kafka",
         "Pact",
         "LLMs",
-        "ClaudeCode/Copilot/Cline/Codex/Gemini",
         "Jenkins",
         "GitHub",
         "Scrum",
         "GitHub Actions",
-        "Pipelines CI/CD"
+        "ClaudeCode/Copilot/Cline/Codex/Gemini"
       ]
     },
     {
       "period": "Août 2019 — Août 2020",
       "company": "Avenue Code Brésil",
+      "location": "Belo Horizonte — Brésil",
       "website": "https://avenuecode.com",
       "role": "Ingénieur logiciel principal — Consultant pour eBay",
       "description": "Consultant technique responsable du développement de solutions pour la planification des achats et la distribution de produits. Architecture de la transition de systèmes Java/Spring hérités vers une architecture moderne de microservices avec Spring Boot, en mettant l'accent sur l'agilité des processus et l'évolutivité des systèmes.",
@@ -96,6 +120,7 @@
     {
       "period": "Août 2013 — Août 2019",
       "company": "Capgemini Brésil",
+      "location": "Belo Horizonte — Brésil",
       "website": "https://www.capgemini.com",
       "role": "Analyste de systèmes principal",
       "description": "Conception et développement de solutions de bureau et d'APIs REST avec agents de mise à jour automatisés. Mise en œuvre de la surveillance infonuagique et conception d'intégrations IoT pour les systèmes RFID et SmartCard (HID).",
@@ -112,6 +137,7 @@
     {
       "period": "Août 2012 — Août 2013",
       "company": "Cast Informática",
+      "location": "Belo Horizonte — Brésil",
       "website": "https://castgroup.com.br",
       "role": "Développeur Java principal",
       "description": "Direction du développement d'applications critiques pour le ministère de la Santé du Brésil, incluant les systèmes de contrôle de la mortalité et de suivi de la santé autochtone. Leader technique pour la conception de composants réutilisables sur plusieurs projets fédéraux et architecture de solutions pour la gestion de la législation gouvernementale.",
@@ -126,6 +152,7 @@
     {
       "period": "Janv 2008 — Juil 2012",
       "company": "Capgemini (anciennement CPM Braxis)",
+      "location": "Belo Horizonte — Brésil",
       "website": "https://capgemini.com",
       "role": "Analyste de systèmes",
       "description": "Livraison de solutions à haut impact dans un environnement de centre de services partagés pour des joueurs majeurs des télécommunications (Oi, Brasil Telecom, Telemig Celular). Conception de systèmes de contrôle anti-fraude et de portails Web à haut trafic. Spécialisation dans les intégrations multiplateformes entre les écosystèmes Java et les outils de flux de travail d'entreprise (Remedy).",

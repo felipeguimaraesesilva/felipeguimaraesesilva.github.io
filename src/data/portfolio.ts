@@ -30,6 +30,7 @@ export interface Experience {
   period: string;
   company: string;
   website?: string;
+  location?: string;
   role: string;
   description: string;
   stack?: string[];
@@ -56,8 +57,15 @@ export interface Education {
   featured?: boolean;
 }
 
+export interface ImpactStat {
+  value: string;
+  label: string;
+  description: string;
+}
+
 export interface PortfolioContent {
   personal: Personal;
+  impactStats: ImpactStat[];
   sideProjects: SideProject[];
   skillCategories: SkillCategory[];
   experiences: Experience[];

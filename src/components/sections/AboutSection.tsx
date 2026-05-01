@@ -22,11 +22,18 @@ import {
   heroCompetenciesTextSx,
   heroSocialBoxSx,
   socialButtonSx,
+  impactStatsWrapperSx,
+  impactGridSx,
+  impactCardSx,
+  impactValueSx,
+  impactLabelSx,
+  impactDescSx,
 } from "@/styles/sx";
 
 export function AboutSection() {
   const content = useContent();
   const personal = content?.personal;
+  const impactStats = content?.impactStats ?? [];
 
   return (
     <Box id="about" sx={heroContainerSx}>
@@ -90,6 +97,21 @@ export function AboutSection() {
           </Box>
         </Box>
       </Box>
+
+      {/* Impact stats */}
+      {impactStats.length > 0 && (
+        <Box sx={impactStatsWrapperSx}>
+          <Box sx={impactGridSx}>
+            {impactStats.map((stat, i) => (
+              <Box key={i} sx={impactCardSx}>
+                <Typography sx={impactValueSx}>{stat.value}</Typography>
+                <Typography sx={impactLabelSx}>{stat.label}</Typography>
+                <Typography sx={impactDescSx}>{stat.description}</Typography>
+              </Box>
+            ))}
+          </Box>
+        </Box>
+      )}
     </Box>
   );
 }

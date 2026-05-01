@@ -249,6 +249,63 @@ export const socialButtonSx: SxProps<Theme> = {
   transition: "all 0.2s",
 };
 
+// ── Impact Stats ──────────────────────────────────────────────────────────────
+
+export const impactStatsWrapperSx: SxProps<Theme> = {
+  px: { xs: 2, sm: 4, md: 6 },
+  pb: { xs: 6, md: 8 },
+  maxWidth: "960px",
+  mx: "auto",
+  width: "100%",
+};
+
+export const impactGridSx: SxProps<Theme> = {
+  display: "grid",
+  gridTemplateColumns: { xs: "1fr 1fr", md: "1fr 1fr 1fr 1fr" },
+  gap: { xs: 2, md: 2.5 },
+};
+
+export const impactCardSx: SxProps<Theme> = {
+  display: "flex",
+  flexDirection: "column",
+  alignItems: "center",
+  textAlign: "center",
+  gap: 0.5,
+  p: { xs: 2, md: 2.5 },
+  borderRadius: 2,
+  border: "1px solid rgba(59,130,246,0.15)",
+  backgroundColor: "rgba(59,130,246,0.03)",
+  backdropFilter: "blur(8px)",
+  transition: "border-color 0.3s ease, background-color 0.3s ease",
+  "&:hover": {
+    borderColor: "rgba(59,130,246,0.4)",
+    backgroundColor: "rgba(59,130,246,0.07)",
+  },
+};
+
+export const impactValueSx: SxProps<Theme> = {
+  fontSize: { xs: "1.9rem", md: "2.4rem" },
+  fontWeight: 800,
+  letterSpacing: "-0.03em",
+  lineHeight: 1,
+  color: "#60a5fa",
+};
+
+export const impactLabelSx: SxProps<Theme> = {
+  fontWeight: 600,
+  fontSize: { xs: "0.72rem", md: "0.78rem" },
+  letterSpacing: "0.06em",
+  textTransform: "uppercase",
+  color: "text.primary",
+  mt: 0.5,
+};
+
+export const impactDescSx: SxProps<Theme> = {
+  fontSize: "0.72rem",
+  color: "text.disabled",
+  lineHeight: 1.45,
+};
+
 // ── Experience ────────────────────────────────────────────────────────────────
 
 export const experienceEntryPeriodSx: SxProps<Theme> = {

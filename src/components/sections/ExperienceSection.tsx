@@ -50,6 +50,7 @@ function ExperienceEntry({ exp, align }: { exp: Experience; align: "left" | "rig
     >
       <Typography variant="caption" sx={experienceEntryPeriodSx}>
         {exp.period}
+        {exp.location && <><br />{exp.location}</>}
       </Typography>
       <Typography sx={experienceEntryCompanySx}>
         {exp.website ? (

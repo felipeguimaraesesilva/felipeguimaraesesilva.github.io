@@ -12,10 +12,27 @@ import type { PortfolioContent } from "@/data/portfolio";
 type Locale = "en" | "fr";
 
 const LOCALE_KEY = "portfolio_locale";
-const CONTENT_FILE: Record<Locale, string> = {
-  en: "/content.json",
-  fr: "/content_fr.json",
-};
+
+function deepMerge<T>(base: T, override: Partial<T>): T {
+  const result = { ...base };
+  for (const key in override) {
+    const ov = override[key];
+    const bv = base[key];
+    if (
+      ov !== null &&
+      typeof ov === "object" &&
+      !Array.isArray(ov) &&
+      bv !== null &&
+      typeof bv === "object" &&
+      !Array.isArray(bv)
+    ) {
+      result[key] = deepMerge(bv, ov as Partial<typeof bv>);
+    } else if (ov !== undefined) {
+      result[key] = ov as T[typeof key];
+    }
+  }
+  return result;
+}
 
 const ContentContext = createContext<PortfolioContent | null>(null);
 
@@ -42,10 +59,20 @@ export function ContentProvider({ children }: { children: ReactNode }) {
   // Fetch content whenever locale changes
   useEffect(() => {
     setContent(null);
-    fetch(CONTENT_FILE[locale])
-      .then((res) => res.json())
-      .then((data: PortfolioContent) => setContent(data))
-      .catch((err) => console.error("Failed to load content:", err));
+    const loadContent = async () => {
+      const base: PortfolioContent = await fetch("/content.json").then((r) =>
+        r.json()
+      );
+      if (locale === "en") {
+        setContent(base);
+        return;
+      }
+      const override: Partial<PortfolioContent> = await fetch(
+        "/content_fr.json"
+      ).then((r) => r.json());
+      setContent(deepMerge(base, override));
+    };
+    loadContent().catch((err) => console.error("Failed to load content:", err));
   }, [locale]);
 
   const setLocale = (l: Locale) => {

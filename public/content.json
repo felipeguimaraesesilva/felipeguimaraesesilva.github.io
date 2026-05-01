@@ -9,6 +9,28 @@
     "location": "Montreal, QC, Canada",
     "competencies": "Senior Software Engineer with 18+ years of experience delivering high-complexity systems and distributed processing for global industry leaders — including an 8-year tenure at Capgemini and 6+ years as a consultant at Avenue Code, currently driving engineering excellence for eBay.\n\nProven expertise in mission-critical, high-availability systems, transforming massive data volumes into resilient business solutions. Solid background in architectural best practices, CI/CD pipelines, and AI-driven development.\n\nFluent in English, actively improving French (B2 Certificate). \n\nCurrently based in Montreal."
   },
+  "impactStats": [
+    {
+      "value": "18+",
+      "label": "Years of Engineering",
+      "description": "Delivering high-complexity systems since 2008"
+    },
+    {
+      "value": "6+",
+      "label": "Years at eBay",
+      "description": "Lead consultant driving SEO/AEO infrastructure"
+    },
+    {
+      "value": "Arch",
+      "label": "Migration Lead",
+      "description": "Architected modernization for eBay's core systems"
+    },
+    {
+      "value": "Global",
+      "label": "Enterprise Reach",
+      "description": "eBay, Telecom & public sector — delivering at enterprise scale"
+    }
+  ],
   "sideProjects": [
     {
       "name": "Band on the Run",
@@ -24,25 +46,25 @@
     {
       "category": "Backend & Data",
       "levels": {
-        "core": ["Java 8-21", "Spring Boot", "Spring Framework", "Spring Batch", "REST APIs", "MySQL", "Kafka"],
-        "strong": ["Spring AI", "Python", "Oracle DB", "NoSQL", "EJB"],
+        "core": ["Java 8-21", "Spring Boot", "Spring Batch", "REST", "NoSQL", "Kafka"],
+        "strong": ["Spring AI", "Python", "Oracle DB", "NoSQL", "EJB", "MySQL"],
         "exposure": ["SOAP", "JavaFX"]
       }
     },
     {
       "category": "Big Data & Cloud",
       "levels": {
-        "core": ["GCP", "Apache Spark", "SparkSQL", "PySpark", "Apache Flink"],
-        "strong": ["GCP Pub/Sub", "Apache Airflow", "Hadoop", "Hive"],
-        "exposure": ["Firebase"]
+        "core": ["GCP", "Apache Spark", "SparkSQL", "PySpark", "Hadoop" ],
+        "strong": ["GCP Pub/Sub", "Apache Airflow", "Hive", "Apache Flink"],
+        "exposure": ["Firebase", "AWS", "Azure"]
       }
     },
     {
       "category": "Engineering & Quality",
       "levels": {
         "core": ["CI/CD Pipelines", "Git", "Jenkins", "Maven", "Scrum", "GitHub Copilot", "Claude Code"],
-        "strong": ["Technical Architecture", "Automated Testing", "Contract Testing", "Pact", "Spring Cloud Contract", "Test Pyramid"],
-        "exposure": ["Infrastructure Migration", "Cline"]
+        "strong": ["Technical Architecture", "Automated Testing", "Test Pyramid"],
+        "exposure": ["Contract Testing", "Pact"]
       }
     }
   ],
@@ -50,7 +72,7 @@
     {
       "period": "Aug 2020 — Present",
       "company": "Avenue Code CANADA",
-      "location": "Montreal, QC (Current) | Brazil",
+      "location": "Montreal — Canada",
       "website": "https://avenuecode.com",
       "role": "Senior Software Engineer — Lead Consultant for eBay",
       "description": "Leading architectural decisions and high-impact solutions for eBay's SEO/AEO ecosystems. Engineered mission-critical canonical URL infrastructure and distributed systems processing massive data volumes for global search visibility. Pioneered AI-driven workflows and LLM integration (Spring AI) to boost engineering productivity. Additionally, optimized talent acquisition by developing a high-efficiency technical interview process for the eBay pipeline.",
@@ -61,24 +83,26 @@
         "Spring Batch",
         "GCP",
         "Pub/Sub",
-        "Spark",
+        "Hadoop",
+        "SparkSql",
+        "HiveSql",
         "Apache Flink",
         "Apache Airflow",
         "Kafka",
         "Pact",
         "LLMs",
-        "ClaudeCode/Copilot/Cline/Codex/Gemini",
         "Jenkins",
         "GitHub",
         "Scrum",
         "GitHub Actions",
-        "CI/CD Pipelines"
+        "ClaudeCode/Copilot/Cline/Codex/Gemini"
 
       ]
     },
     {
       "period": "Aug 2019 — Aug 2020",
       "company": "Avenue Code Brazil",
+      "location": "Belo Horizonte — Brazil",
       "website": "https://avenuecode.com",
       "role": "Senior Software Engineer — Consultant for eBay",
       "description": "Acted as a technical consultant leading the development of solutions for purchase planning and product distribution. Architected the transition from legacy Java/Spring systems to a modern microservices architecture using Spring Boot, focusing on process agility and system scalability.",
@@ -97,6 +121,7 @@
     {
       "period": "Aug 2013 — Aug 2019",
       "company": "Capgemini Brazil",
+      "location": "Belo Horizonte — Brazil",
       "website": "https://www.capgemini.com",
       "role": "Senior System Analyst",
       "description": "Designed and developed desktop solutions and REST APIs with automated update agents. Implemented cloud-based monitoring and engineered IoT integrations for RFID and SmartCard (HID) systems.",
@@ -113,6 +138,7 @@
     {
       "period": "Aug 2012 — Aug 2013",
       "company": "Cast Informática",
+      "location": "Belo Horizonte — Brazil",
       "website": "https://castgroup.com.br",
       "role": "Senior Java Developer",
       "description": "Led the development of mission-critical applications for the Brazilian Ministry of Health, including mortality control and indigenous health monitoring systems. Acted as a key technical lead in designing reusable components across multiple federal projects and architected solutions for government legislation management and digital publishing.",
@@ -127,6 +153,7 @@
     {
       "period": "Jan 2008 — Jul 2012",
       "company": "Capgemini (formerly CPM Braxis)",
+      "location": "Belo Horizonte — Brazil",
       "website": "https://capgemini.com",
       "role": "Systems Analyst",
       "description": "Delivered high-impact solutions within a fast-paced Software Factory environment for major Telecom players (Oi, Brasil Telecom, Telemig Celular). Engineered anti-fraud control systems and high-traffic web portals. Specialized in cross-platform integrations between Java ecosystems and enterprise workflow tools (Remedy), while managing diverse management applications across multiple tech stacks.",
