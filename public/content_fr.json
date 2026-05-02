@@ -42,32 +42,6 @@
       "website": "https://www.bandontherunmusic.com/"
     }
   ],
-  "skillCategories": [
-    {
-      "category": "Backend & Data",
-      "levels": {
-        "core": ["Java 8-21", "Spring Boot", "Spring Batch", "REST", "NoSQL", "Kafka"],
-        "strong": ["Spring AI", "Python", "Oracle DB", "NoSQL", "EJB", "MySQL"],
-        "exposure": ["SOAP", "JavaFX"]
-      }
-    },
-    {
-      "category": "Big Data & Cloud",
-      "levels": {
-        "core": ["GCP", "Apache Spark", "SparkSQL", "PySpark", "Hadoop" ],
-        "strong": ["GCP Pub/Sub", "Apache Airflow", "Hive", "Apache Flink"],
-        "exposure": ["Firebase", "AWS", "Azure"]
-      }
-    },
-    {
-      "category": "Engineering & Quality",
-      "levels": {
-        "core": ["CI/CD Pipelines", "Git", "Jenkins", "Maven", "Scrum", "GitHub Copilot", "Claude Code"],
-        "strong": ["Technical Architecture", "Automated Testing", "Test Pyramid"],
-        "exposure": ["Contract Testing", "Pact"]
-      }
-    }
-  ],
   "experiences": [
     {
       "period": "Août 2020 — Présent",
@@ -185,13 +159,6 @@
       "institution": "Colégio Faculdade Cotemig",
       "location": "Minas Gerais, Brésil",
       "featured": true
-    },
-    {
-      "period": "Juin 2012 — Sep 2012",
-      "degree": "Architecture Android",
-      "field": "Cours d'extension",
-      "institution": "FrameWork Institution",
-      "location": "Minas Gerais, Brésil"
     },
     {
       "period": "Délivré jan 2025 · Expire jan 2027",

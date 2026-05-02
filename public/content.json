@@ -64,7 +64,7 @@
       "levels": {
         "core": ["CI/CD Pipelines", "Git", "Jenkins", "Maven", "Scrum", "GitHub Copilot", "Claude Code"],
         "strong": ["Technical Architecture", "Automated Testing", "Test Pyramid"],
-        "exposure": ["Contract Testing", "Pact"]
+        "exposure": ["Contract Testing", "Pact", "Gradle", "GitHub Actions"]
       }
     }
   ],
@@ -186,13 +186,6 @@
       "institution": "Colégio Faculdade Cotemig",
       "location": "Minas Gerais, Brazil",
       "featured": true
-    },
-    {
-      "period": "Jun 2012 — Sep 2012",
-      "degree": "Android Architecture",
-      "field": "Extension Course",
-      "institution": "FrameWork Institution",
-      "location": "Minas Gerais, Brazil"
     },
     {
       "period": "Issued Jan 2025 · Expires Jan 2027",
