@@ -45,7 +45,7 @@ export function AboutSection() {
             <Box sx={heroPhotoBoxSx}>
               <Image
                 src={personal.photo}
-                alt={personal.name}
+                alt={`${personal.name} — ${personal.role}, ${personal.location}`}
                 fill
                 style={{ objectFit: "cover", objectPosition: "center top" }}
               />

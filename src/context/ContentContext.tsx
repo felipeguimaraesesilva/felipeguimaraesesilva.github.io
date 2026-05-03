@@ -46,9 +46,16 @@ const LocaleContext = createContext<LocaleContextValue>({
   setLocale: () => {},
 });
 
-export function ContentProvider({ children }: { children: ReactNode }) {
+export function ContentProvider({
+  children,
+  initialContent,
+}: {
+  children: ReactNode;
+  initialContent: PortfolioContent;
+}) {
   const [locale, setLocaleState] = useState<Locale>("en");
-  const [content, setContent] = useState<PortfolioContent | null>(null);
+  // Seed state with server-provided content so SSG HTML contains real data
+  const [content, setContent] = useState<PortfolioContent>(initialContent);
 
   // Read locale from localStorage on mount
   useEffect(() => {
@@ -56,24 +63,20 @@ export function ContentProvider({ children }: { children: ReactNode }) {
     if (saved === "en" || saved === "fr") setLocaleState(saved);
   }, []);
 
-  // Fetch content whenever locale changes
+  // Sync content whenever locale changes
   useEffect(() => {
-    setContent(null);
+    if (locale === "en") {
+      setContent(initialContent);
+      return;
+    }
     const loadContent = async () => {
-      const base: PortfolioContent = await fetch("/content.json").then((r) =>
-        r.json()
-      );
-      if (locale === "en") {
-        setContent(base);
-        return;
-      }
       const override: Partial<PortfolioContent> = await fetch(
         "/content_fr.json"
       ).then((r) => r.json());
-      setContent(deepMerge(base, override));
+      setContent(deepMerge(initialContent, override));
     };
     loadContent().catch((err) => console.error("Failed to load content:", err));
-  }, [locale]);
+  }, [locale, initialContent]);
 
   const setLocale = (l: Locale) => {
     localStorage.setItem(LOCALE_KEY, l);

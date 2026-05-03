@@ -1,0 +1,16 @@
+{
+  "name": "Felipe Silva — Senior Software Engineer",
+  "short_name": "Felipe Silva",
+  "description": "Portfolio of Felipe Silva, Senior Software Engineer with 18+ years of experience.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0a0a0f",
+  "theme_color": "#0a0a0f",
+  "icons": [
+    {
+      "src": "/favicon.ico",
+      "sizes": "any",
+      "type": "image/x-icon"
+    }
+  ]
+}
