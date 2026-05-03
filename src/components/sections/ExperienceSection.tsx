@@ -14,9 +14,17 @@ import {
   experienceEntryDescSx,
   experienceEntryStackSx,
   experienceEntryStackChipSx,
+  experienceEntrySx,
   timelineDotSx,
   timelineMobileLineSx,
+  timelineMobileContainerSx,
+  timelineMobileItemSx,
+  timelineMobileDotWrapperSx,
   timelineDesktopLineSx,
+  timelineDesktopContainerSx,
+  timelineDesktopRowSx,
+  timelineDesktopDotCenterSx,
+  timelinePlaceholderSx,
 } from "@/styles/sx";
 
 const STEP = 320;
@@ -24,30 +32,7 @@ const STEP = 320;
 function ExperienceEntry({ exp, align }: { exp: Experience; align: "left" | "right" }) {
   const isLeft = align === "left";
   return (
-    <Box
-      sx={{
-        display: "flex",
-        flexDirection: "column",
-        gap: 0.75,
-        textAlign: isLeft ? "right" : "left",
-        alignItems: isLeft ? "flex-end" : "flex-start",
-        maxWidth: 320,
-        ml: isLeft ? "auto" : 0,
-        mr: isLeft ? 0 : "auto",
-        borderRadius: 2,
-        p: 1.5,
-        position: "relative",
-        zIndex: 1,
-        backdropFilter: "blur(0px)",
-        transition: "box-shadow 0.15s ease, backdrop-filter 0.15s ease, transform 0.15s ease, z-index 0s",
-        "&:hover": {
-          boxShadow: "0 0 0 1px rgba(59,130,246,0.18)",
-          backdropFilter: "blur(10px)",
-          transform: "scale(1.06)",
-          zIndex: 10,
-        },
-      }}
-    >
+    <Box sx={experienceEntrySx(isLeft)}>
       <Typography variant="caption" sx={experienceEntryPeriodSx}>
         {exp.period}
         {exp.location && <><br />{exp.location}</>}
@@ -100,10 +85,10 @@ export function ExperienceSection() {
       />
 
       {/* Mobile */}
-      <Box sx={{ display: { xs: "flex", md: "none" }, flexDirection: "column", gap: 5 }}>
+      <Box sx={timelineMobileContainerSx}>
         {experiences.map((exp, i) => (
-          <Box key={i} sx={{ display: "flex", gap: 2, alignItems: "flex-start" }}>
-            <Box sx={{ display: "flex", flexDirection: "column", alignItems: "center", pt: 0.5, flexShrink: 0 }}>
+          <Box key={i} sx={timelineMobileItemSx}>
+            <Box sx={timelineMobileDotWrapperSx}>
               <TimelineDot />
               {i < experiences.length - 1 && <Box sx={timelineMobileLineSx} />}
             </Box>
@@ -113,33 +98,16 @@ export function ExperienceSection() {
       </Box>
 
       {/* Desktop staircase */}
-      <Box
-        sx={{
-          display: { xs: "none", md: "block" },
-          position: "relative",
-          pb: `${experiences.length * STEP + 160}px`,
-        }}
-      >
+      <Box sx={timelineDesktopContainerSx(experiences.length, STEP)}>
         <Box sx={timelineDesktopLineSx} />
 
         {experiences.map((exp, i) => (
-          <Box
-            key={i}
-            sx={{
-              position: "absolute",
-              top: i * STEP,
-              left: 0,
-              right: 0,
-              display: "grid",
-              gridTemplateColumns: "1fr 80px 1fr",
-              alignItems: "flex-start",
-            }}
-          >
-            {i % 2 === 0 ? <ExperienceEntry exp={exp} align="left" /> : <Box sx={{ pointerEvents: "none" }} />}
-            <Box sx={{ display: "flex", justifyContent: "center", pt: 0.5 }}>
+          <Box key={i} sx={timelineDesktopRowSx(i * STEP)}>
+            {i % 2 === 0 ? <ExperienceEntry exp={exp} align="left" /> : <Box sx={timelinePlaceholderSx} />}
+            <Box sx={timelineDesktopDotCenterSx}>
               <TimelineDot />
             </Box>
-            {i % 2 !== 0 ? <ExperienceEntry exp={exp} align="right" /> : <Box sx={{ pointerEvents: "none" }} />}
+            {i % 2 !== 0 ? <ExperienceEntry exp={exp} align="right" /> : <Box sx={timelinePlaceholderSx} />}
           </Box>
         ))}
       </Box>

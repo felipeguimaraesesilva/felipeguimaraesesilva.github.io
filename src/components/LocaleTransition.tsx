@@ -3,6 +3,7 @@
 import { useState, useEffect, useRef } from "react";
 import Box from "@mui/material/Box";
 import { useLocale } from "@/context/ContentContext";
+import { localeTransitionSx } from "@/styles/sx";
 
 /**
  * Wraps page content with a quick opacity fade when the locale changes.
@@ -25,12 +26,7 @@ export function LocaleTransition({ children }: { children: React.ReactNode }) {
   }, [locale]);
 
   return (
-    <Box
-      sx={{
-        opacity: visible ? 1 : 0,
-        transition: visible ? "opacity 0.25s ease" : "opacity 0.15s ease",
-      }}
-    >
+    <Box sx={localeTransitionSx(visible)}>
       {children}
     </Box>
   );

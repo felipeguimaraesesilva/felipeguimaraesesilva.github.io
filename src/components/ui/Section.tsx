@@ -8,6 +8,7 @@ import {
   sectionBoxSx,
   sectionHeadingWrapperSx,
   sectionHeadingTitleSx,
+  sectionHeadingSubtitleSx,
   sectionHeadingDividerSx,
 } from "@/styles/sx";
 
@@ -43,12 +44,12 @@ export function SectionHeading({ title, subtitle }: SectionHeadingProps) {
     <Box sx={sectionHeadingWrapperSx}>
       <Typography
         variant="h4"
-        sx={{ ...sectionHeadingTitleSx, mb: subtitle ? 0.75 : 0 }}
+        sx={sectionHeadingTitleSx(!!subtitle)}
       >
         {title}
       </Typography>
       {subtitle && (
-        <Typography variant="body2" color="text.disabled" sx={{ letterSpacing: "0.02em" }}>
+        <Typography variant="body2" color="text.disabled" sx={sectionHeadingSubtitleSx}>
           {subtitle}
         </Typography>
       )}

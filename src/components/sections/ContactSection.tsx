@@ -6,7 +6,7 @@ import Button from "@mui/material/Button";
 import Stack from "@mui/material/Stack";
 import EmailOutlinedIcon from "@mui/icons-material/EmailOutlined";
 import { GithubIcon, LinkedinIcon } from "@/components/ui/SocialIcons";
-import { contactStackSx, linkButtonSx } from "@/styles/sx";
+import { contactStackSx, linkButtonSx, contactEmailIconSx } from "@/styles/sx";
 
 export function ContactSection() {
   const content = useContent();
@@ -22,7 +22,7 @@ export function ContactSection() {
             href={`mailto:${content.personal.email}`}
             variant="outlined"
             size="large"
-            startIcon={<EmailOutlinedIcon sx={{ fontSize: 20 }} />}
+            startIcon={<EmailOutlinedIcon sx={contactEmailIconSx} />}
             sx={linkButtonSx}
           >
             Email

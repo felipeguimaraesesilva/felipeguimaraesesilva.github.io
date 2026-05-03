@@ -20,6 +20,8 @@ import {
   beyondProjectLinkSx,
   beyondProjectTagSx,
   beyondProjectDescSx,
+  beyondSpotifyIconSx,
+  beyondGithubIconSx,
 } from "@/styles/sx";
 
 function SpotifyIcon(props: React.ComponentProps<typeof SvgIcon>) {
@@ -51,8 +53,8 @@ export function BeyondTheCodeSection() {
             ) : (
               <Box sx={project.type === "spotify" ? beyondProjectIconSpotifySx : beyondProjectIconGithubSx}>
                 {project.type === "spotify"
-                  ? <SpotifyIcon sx={{ fontSize: 22, color: "#1ed760" }} />
-                  : <GitHubIcon sx={{ fontSize: 20, color: "primary.main" }} />}
+                  ? <SpotifyIcon sx={beyondSpotifyIconSx} />
+                  : <GitHubIcon sx={beyondGithubIconSx} />}
               </Box>
             )}
 

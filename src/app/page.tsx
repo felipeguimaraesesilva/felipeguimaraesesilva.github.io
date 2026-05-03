@@ -8,6 +8,12 @@ import { BeyondTheCodeSection } from "@/components/sections/BeyondTheCodeSection
 import { ContactSection } from "@/components/sections/ContactSection";
 import { LocaleTransition } from "@/components/LocaleTransition";
 import Box from "@mui/material/Box";
+import {
+  sectionBgOuterSx,
+  sectionBgImageSx,
+  sectionBgGradientSx,
+  sectionBgContentSx,
+} from "@/styles/sx";
 
 function SectionBg({
   image,
@@ -21,27 +27,10 @@ function SectionBg({
   children: React.ReactNode;
 }) {
   return (
-    <Box sx={{ position: "relative", overflow: "hidden" }}>
-      <Box
-        sx={{
-          position: "absolute",
-          inset: 0,
-          backgroundImage: `url(${image})`,
-          backgroundSize: "cover",
-          backgroundPosition: position,
-          opacity,
-          zIndex: 0,
-        }}
-      />
-      <Box
-        sx={{
-          position: "absolute",
-          inset: 0,
-          background: "linear-gradient(to bottom, #0a0a0f 0%, transparent 15%, transparent 85%, #0a0a0f 100%)",
-          zIndex: 1,
-        }}
-      />
-      <Box sx={{ position: "relative", zIndex: 2 }}>{children}</Box>
+    <Box sx={sectionBgOuterSx}>
+      <Box sx={sectionBgImageSx(image, position, opacity)} />
+      <Box sx={sectionBgGradientSx} />
+      <Box sx={sectionBgContentSx}>{children}</Box>
     </Box>
   );
 }

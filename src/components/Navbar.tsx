@@ -24,6 +24,9 @@ import {
   navbarDrawerPaperSx,
   navbarDrawerHeaderSx,
   navbarDrawerCloseButtonSx,
+  navbarAppBarSx,
+  navbarSeparatorSx,
+  navbarDrawerItemTextSx,
   langSwitcherSx,
   langButtonSx,
 } from "@/styles/sx";
@@ -47,13 +50,7 @@ export function Navbar() {
     <>
       <AppBar
         position="fixed"
-        sx={{
-          transition: "all 0.3s ease",
-          backgroundColor: scrolled ? "rgba(10, 10, 15, 0.85)" : "transparent",
-          backdropFilter: scrolled ? "blur(12px)" : "none",
-          borderBottom: scrolled ? "1px solid rgba(255,255,255,0.05)" : "none",
-          py: scrolled ? 0 : 0.5,
-        }}
+        sx={navbarAppBarSx(scrolled)}
       >
         <Toolbar sx={navbarToolbarSx}>
           {/* Language switcher — left */}
@@ -61,7 +58,7 @@ export function Navbar() {
             <Button onClick={() => setLocale("en")} sx={langButtonSx(locale === "en")} disableRipple>
               EN
             </Button>
-            <Typography sx={{ color: "text.disabled", fontSize: "0.65rem", lineHeight: 1 }}>|</Typography>
+            <Typography sx={navbarSeparatorSx}>|</Typography>
             <Button onClick={() => setLocale("fr")} sx={langButtonSx(locale === "fr")} disableRipple>
               FR
             </Button>
@@ -109,7 +106,7 @@ export function Navbar() {
               <ListItemButton href={link.href} onClick={() => setMobileOpen(false)}>
                 <ListItemText
                   primary={link.label}
-                  slotProps={{ primary: { sx: { color: "text.secondary", fontSize: "0.95rem" } } }}
+                  slotProps={{ primary: { sx: navbarDrawerItemTextSx } }}
                 />
               </ListItemButton>
             </ListItem>

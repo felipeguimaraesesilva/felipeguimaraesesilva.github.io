@@ -1,5 +1,45 @@
 import type { SxProps, Theme } from "@mui/material/styles";
 
+// ── Page / SectionBg ──────────────────────────────────────────────────────────
+
+export const sectionBgOuterSx: SxProps<Theme> = {
+  position: "relative",
+  overflow: "hidden",
+};
+
+export const sectionBgImageSx = (
+  image: string,
+  position: string,
+  opacity: number
+): SxProps<Theme> => ({
+  position: "absolute",
+  inset: 0,
+  backgroundImage: `url(${image})`,
+  backgroundSize: "cover",
+  backgroundPosition: position,
+  opacity,
+  zIndex: 0,
+});
+
+export const sectionBgGradientSx: SxProps<Theme> = {
+  position: "absolute",
+  inset: 0,
+  background: "linear-gradient(to bottom, #0a0a0f 0%, transparent 15%, transparent 85%, #0a0a0f 100%)",
+  zIndex: 1,
+};
+
+export const sectionBgContentSx: SxProps<Theme> = {
+  position: "relative",
+  zIndex: 2,
+};
+
+// ── Locale Transition ─────────────────────────────────────────────────────────
+
+export const localeTransitionSx = (visible: boolean): SxProps<Theme> => ({
+  opacity: visible ? 1 : 0,
+  transition: visible ? "opacity 0.25s ease" : "opacity 0.15s ease",
+});
+
 // ── Language switcher ─────────────────────────────────────────────────────────
 
 export const langSwitcherSx: SxProps<Theme> = {
@@ -25,6 +65,25 @@ export const langButtonSx = (active: boolean): SxProps<Theme> => ({
 });
 
 // ── Navbar ────────────────────────────────────────────────────────────────────
+
+export const navbarAppBarSx = (scrolled: boolean): SxProps<Theme> => ({
+  transition: "all 0.3s ease",
+  backgroundColor: scrolled ? "rgba(10, 10, 15, 0.85)" : "transparent",
+  backdropFilter: scrolled ? "blur(12px)" : "none",
+  borderBottom: scrolled ? "1px solid rgba(255,255,255,0.05)" : "none",
+  py: scrolled ? 0 : 0.5,
+});
+
+export const navbarSeparatorSx: SxProps<Theme> = {
+  color: "text.disabled",
+  fontSize: "0.65rem",
+  lineHeight: 1,
+};
+
+export const navbarDrawerItemTextSx: SxProps<Theme> = {
+  color: "text.secondary",
+  fontSize: "0.95rem",
+};
 
 export const navbarToolbarSx: SxProps<Theme> = {
   maxWidth: "960px",
@@ -117,10 +176,15 @@ export const sectionBoxSx: SxProps<Theme> = {
 
 export const sectionHeadingWrapperSx: SxProps<Theme> = { mb: 5 };
 
-export const sectionHeadingTitleSx: SxProps<Theme> = {
+export const sectionHeadingTitleSx = (hasSubtitle: boolean): SxProps<Theme> => ({
   fontWeight: 700,
   letterSpacing: "-0.02em",
   color: "text.primary",
+  mb: hasSubtitle ? 0.75 : 0,
+});
+
+export const sectionHeadingSubtitleSx: SxProps<Theme> = {
+  letterSpacing: "0.02em",
 };
 
 export const sectionHeadingDividerSx: SxProps<Theme> = {
@@ -413,6 +477,75 @@ export const timelineDesktopLineSx: SxProps<Theme> = {
   transform: "translateX(-50%)",
 };
 
+export const experienceEntrySx = (isLeft: boolean): SxProps<Theme> => ({
+  display: "flex",
+  flexDirection: "column",
+  gap: 0.75,
+  textAlign: isLeft ? "right" : "left",
+  alignItems: isLeft ? "flex-end" : "flex-start",
+  maxWidth: 320,
+  ml: isLeft ? "auto" : 0,
+  mr: isLeft ? 0 : "auto",
+  borderRadius: 2,
+  p: 1.5,
+  position: "relative",
+  zIndex: 1,
+  backdropFilter: "blur(0px)",
+  transition: "box-shadow 0.15s ease, backdrop-filter 0.15s ease, transform 0.15s ease, z-index 0s",
+  "&:hover": {
+    boxShadow: "0 0 0 1px rgba(59,130,246,0.18)",
+    backdropFilter: "blur(10px)",
+    transform: "scale(1.06)",
+    zIndex: 10,
+  },
+});
+
+export const timelineMobileContainerSx: SxProps<Theme> = {
+  display: { xs: "flex", md: "none" },
+  flexDirection: "column",
+  gap: 5,
+};
+
+export const timelineMobileItemSx: SxProps<Theme> = {
+  display: "flex",
+  gap: 2,
+  alignItems: "flex-start",
+};
+
+export const timelineMobileDotWrapperSx: SxProps<Theme> = {
+  display: "flex",
+  flexDirection: "column",
+  alignItems: "center",
+  pt: 0.5,
+  flexShrink: 0,
+};
+
+export const timelineDesktopContainerSx = (itemCount: number, step: number): SxProps<Theme> => ({
+  display: { xs: "none", md: "block" },
+  position: "relative",
+  pb: `${itemCount * step + 160}px`,
+});
+
+export const timelineDesktopRowSx = (top: number): SxProps<Theme> => ({
+  position: "absolute",
+  top,
+  left: 0,
+  right: 0,
+  display: "grid",
+  gridTemplateColumns: "1fr 80px 1fr",
+  alignItems: "flex-start",
+});
+
+export const timelineDesktopDotCenterSx: SxProps<Theme> = {
+  display: "flex",
+  justifyContent: "center",
+  pt: 0.5,
+};
+
+export const timelinePlaceholderSx: SxProps<Theme> = {
+  pointerEvents: "none",
+};
+
 // ── Skills ────────────────────────────────────────────────────────────────────
 
 export const skillsFilterRowSx: SxProps<Theme> = {
@@ -597,6 +730,16 @@ export const beyondProjectDescSx: SxProps<Theme> = {
   fontSize: "0.86rem",
 };
 
+export const beyondSpotifyIconSx: SxProps<Theme> = {
+  fontSize: 22,
+  color: "#1ed760",
+};
+
+export const beyondGithubIconSx: SxProps<Theme> = {
+  fontSize: 20,
+  color: "primary.main",
+};
+
 // ── Education ─────────────────────────────────────────────────────────────────
 
 export const educationFeaturedGridSx: SxProps<Theme> = {
@@ -734,4 +877,8 @@ export const linkButtonSx: SxProps<Theme> = {
     backgroundColor: "rgba(59,130,246,0.06)",
   },
   transition: "all 0.2s",
+};
+
+export const contactEmailIconSx: SxProps<Theme> = {
+  fontSize: 20,
 };
