@@ -39,7 +39,7 @@ function ExperienceEntry({ exp, align }: { exp: Experience; align: "left" | "rig
         position: "relative",
         zIndex: 1,
         backdropFilter: "blur(0px)",
-        transition: "box-shadow 0.35s ease, backdrop-filter 0.35s ease, transform 0.35s ease, z-index 0s",
+        transition: "box-shadow 0.15s ease, backdrop-filter 0.15s ease, transform 0.15s ease, z-index 0s",
         "&:hover": {
           boxShadow: "0 0 0 1px rgba(59,130,246,0.18)",
           backdropFilter: "blur(10px)",

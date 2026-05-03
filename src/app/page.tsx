@@ -6,6 +6,7 @@ import { SkillsSection } from "@/components/sections/SkillsSection";
 import { EducationSection } from "@/components/sections/EducationSection";
 import { BeyondTheCodeSection } from "@/components/sections/BeyondTheCodeSection";
 import { ContactSection } from "@/components/sections/ContactSection";
+import { LocaleTransition } from "@/components/LocaleTransition";
 import Box from "@mui/material/Box";
 
 function SectionBg({
@@ -49,19 +50,21 @@ export default function Home() {
   return (
     <>
       <Navbar />
-      <main>
-        <SectionBg image="/images/bg-portrait.jpg" position="center top" opacity={0.07}>
-          <AboutSection />
-          <ExperienceSection />
-        </SectionBg>
+      <LocaleTransition>
+        <main>
+          <SectionBg image="/images/bg-portrait.jpg" position="center top" opacity={0.07}>
+            <AboutSection />
+            <ExperienceSection />
+          </SectionBg>
 
-        <SectionBg image="/images/bg-workspace.jpg" position="center" opacity={0.06}>
-          <SkillsSection />
-          <EducationSection />
-          <BeyondTheCodeSection />
-          <ContactSection />
-        </SectionBg>
-      </main>
+          <SectionBg image="/images/bg-workspace.jpg" position="center" opacity={0.06}>
+            <SkillsSection />
+            <EducationSection />
+            <BeyondTheCodeSection />
+            <ContactSection />
+          </SectionBg>
+        </main>
+      </LocaleTransition>
       <Footer />
     </>
   );

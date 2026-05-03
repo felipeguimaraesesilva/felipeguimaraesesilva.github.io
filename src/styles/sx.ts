@@ -276,10 +276,12 @@ export const impactCardSx: SxProps<Theme> = {
   border: "1px solid rgba(59,130,246,0.15)",
   backgroundColor: "rgba(59,130,246,0.03)",
   backdropFilter: "blur(8px)",
-  transition: "border-color 0.3s ease, background-color 0.3s ease",
+  transition: "border-color 0.15s ease, background-color 0.15s ease, transform 0.15s ease, box-shadow 0.15s ease",
   "&:hover": {
-    borderColor: "rgba(59,130,246,0.4)",
-    backgroundColor: "rgba(59,130,246,0.07)",
+    borderColor: "rgba(59,130,246,0.5)",
+    backgroundColor: "rgba(59,130,246,0.09)",
+    transform: "scale(1.07)",
+    boxShadow: "0 8px 24px rgba(59,130,246,0.15)",
   },
 };
 
@@ -360,7 +362,7 @@ export const experienceEntryStackChipSx: SxProps<Theme> = {
   borderRadius: 1,
   cursor: "default",
   overflow: "visible",
-  transition: "transform 0.2s ease, background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease",
+  transition: "transform 0.15s ease, background-color 0.15s ease, color 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease",
   "&:hover": {
     backgroundColor: "rgba(59,130,246,0.22)",
     color: "#93c5fd",

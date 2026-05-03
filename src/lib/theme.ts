@@ -42,7 +42,13 @@ const theme = createTheme({
   components: {
     MuiCssBaseline: {
       styleOverrides: {
-        html: { scrollBehavior: "smooth" },
+        html: {
+          scrollBehavior: "smooth",
+          // Reserve scrollbar gutter at all times so the viewport width
+          // doesn't shift when the scrollbar appears/disappears (e.g. on
+          // locale change), which would cause background-cover images to jump.
+          scrollbarGutter: "stable",
+        },
         body: {
           backgroundColor: "#0a0a0f",
           color: "#e2e8f0",
