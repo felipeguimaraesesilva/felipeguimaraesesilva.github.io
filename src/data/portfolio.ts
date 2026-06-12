@@ -63,6 +63,7 @@ export interface Certification {
   field?: string;
   institution: string;
   logo?: string;
+  link?: string;
 }
 
 export interface ImpactStat {

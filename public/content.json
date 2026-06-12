@@ -47,25 +47,74 @@
     {
       "category": "Backend & Data",
       "levels": {
-        "core": ["Java 8-21", "Spring Boot", "Spring Batch", "REST", "NoSQL", "Kafka"],
-        "strong": ["Spring AI", "Python", "Oracle DB", "NoSQL", "EJB", "MySQL"],
-        "exposure": ["SOAP", "JavaFX"]
+        "core": [
+          "Java 8-21",
+          "Spring Boot",
+          "Spring Batch",
+          "REST",
+          "NoSQL",
+          "Kafka"
+        ],
+        "strong": [
+          "Spring AI",
+          "Python",
+          "Oracle DB",
+          "NoSQL",
+          "EJB",
+          "MySQL"
+        ],
+        "exposure": [
+          "SOAP",
+          "JavaFX"
+        ]
       }
     },
     {
       "category": "Big Data & Cloud",
       "levels": {
-        "core": ["GCP", "Apache Spark", "SparkSQL", "PySpark", "Hadoop" ],
-        "strong": ["GCP Pub/Sub", "Apache Airflow", "Hive", "Apache Flink"],
-        "exposure": ["Firebase", "AWS", "Azure"]
+        "core": [
+          "GCP",
+          "Apache Spark",
+          "SparkSQL",
+          "PySpark",
+          "Hadoop"
+        ],
+        "strong": [
+          "GCP Pub/Sub",
+          "Apache Airflow",
+          "Hive",
+          "Apache Flink"
+        ],
+        "exposure": [
+          "Firebase",
+          "AWS",
+          "Azure"
+        ]
       }
     },
     {
       "category": "Engineering & Quality",
       "levels": {
-        "core": ["CI/CD Pipelines", "Git", "Jenkins", "Maven", "Scrum", "GitHub Copilot", "Claude Code"],
-        "strong": ["Technical Architecture", "Automated Testing", "Test Pyramid"],
-        "exposure": ["Contract Testing", "Pact", "Gradle", "GitHub Actions"]
+        "core": [
+          "CI/CD Pipelines",
+          "Git",
+          "Jenkins",
+          "Maven",
+          "Scrum",
+          "GitHub Copilot",
+          "Claude Code"
+        ],
+        "strong": [
+          "Technical Architecture",
+          "Automated Testing",
+          "Test Pyramid"
+        ],
+        "exposure": [
+          "Contract Testing",
+          "Pact",
+          "Gradle",
+          "GitHub Actions"
+        ]
       }
     }
   ],
@@ -97,7 +146,6 @@
         "Scrum",
         "GitHub Actions",
         "ClaudeCode/Copilot/Cline/Codex/Gemini"
-
       ]
     },
     {
@@ -191,6 +239,14 @@
   ],
   "certifications": [
     {
+      "period": "Issued 2025",
+      "degree": "Associate Cloud Engineer",
+      "field": "Cloud Certification",
+      "institution": "Google Cloud",
+      "logo": "/images/google-cloud-ace.png",
+      "link": "https://www.credly.com/badges/753d47fc-5eb6-4dea-9c26-51f07afb6d7f/public_url"
+    },
+    {
       "period": "Issued Jan 2025 · Expires Jan 2027",
       "degree": "TEFAQ — TEF pour l'accès au Québec",
       "field": "Language Certification",
@@ -233,9 +289,21 @@
         "subtitle": "Technologies I work with",
         "filterAll": "All",
         "levels": [
-          { "id": "core", "label": "Core Expertise", "description": "Primary stack — used daily in production systems" },
-          { "id": "strong", "label": "Strong Working Knowledge", "description": "Regularly applied in professional contexts" },
-          { "id": "exposure", "label": "Additional Exposure", "description": "Used in specific projects or actively explored" }
+          {
+            "id": "core",
+            "label": "Core Expertise",
+            "description": "Primary stack — used daily in production systems"
+          },
+          {
+            "id": "strong",
+            "label": "Strong Working Knowledge",
+            "description": "Regularly applied in professional contexts"
+          },
+          {
+            "id": "exposure",
+            "label": "Additional Exposure",
+            "description": "Used in specific projects or actively explored"
+          }
         ]
       },
       "education": {
