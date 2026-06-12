@@ -57,6 +57,14 @@ export interface Education {
   featured?: boolean;
 }
 
+export interface Certification {
+  period: string;
+  degree: string;
+  field?: string;
+  institution: string;
+  logo?: string;
+}
+
 export interface ImpactStat {
   value: string;
   label: string;
@@ -70,6 +78,7 @@ export interface PortfolioContent {
   skillCategories: SkillCategory[];
   experiences: Experience[];
   education: Education[];
+  certifications?: Certification[];
   ui: UI;
 }
 

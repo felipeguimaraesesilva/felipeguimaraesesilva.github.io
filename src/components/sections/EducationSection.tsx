@@ -4,6 +4,7 @@ import { Section, SectionHeading } from "@/components/ui/Section";
 import { useContent } from "@/context/ContentContext";
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
+import Script from "next/script";
 import {
   educationFeaturedGridSx,
   educationSecondaryGridSx,
@@ -84,6 +85,46 @@ export function EducationSection() {
           </Box>
         </>
       )}
+
+      <Typography sx={{ ...educationSecondaryLabelSx, mt: 4 }}>
+        Certifications
+      </Typography>
+      <Box sx={{ display: "flex", flexWrap: "wrap", gap: 2, alignItems: "flex-start" }}>
+        <div
+          data-iframe-width="150"
+          data-iframe-height="270"
+          data-share-badge-id="753d47fc-5eb6-4dea-9c26-51f07afb6d7f"
+          data-share-badge-host="https://www.credly.com"
+        />
+        {(content?.certifications ?? []).map((cert, i) => (
+          <Box key={i} sx={{ ...educationSecondaryCardSx, width: 150, minHeight: 270, justifyContent: "flex-start" }}>
+            {cert.logo && (
+              // eslint-disable-next-line @next/next/no-img-element
+              <img
+                src={cert.logo}
+                alt={cert.degree}
+                style={{ width: "100%", height: "auto", borderRadius: 6, marginBottom: 8 }}
+              />
+            )}
+            <Typography variant="caption" sx={educationSecondaryPeriodSx}>
+              {cert.period}
+            </Typography>
+            <Typography sx={educationSecondaryDegreeSx}>{cert.degree}</Typography>
+            {cert.field && (
+              <Typography variant="caption" sx={educationSecondaryFieldSx}>
+                {cert.field}
+              </Typography>
+            )}
+            <Typography variant="caption" sx={educationSecondaryInstitutionSx}>
+              {cert.institution}
+            </Typography>
+          </Box>
+        ))}
+        <Script
+          src="//cdn.credly.com/assets/utilities/embed.js"
+          strategy="lazyOnload"
+        />
+      </Box>
     </Section>
   );
 }

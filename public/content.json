@@ -187,12 +187,15 @@
       "institution": "Colégio Faculdade Cotemig",
       "location": "Minas Gerais, Brazil",
       "featured": true
-    },
+    }
+  ],
+  "certifications": [
     {
       "period": "Issued Jan 2025 · Expires Jan 2027",
       "degree": "TEFAQ — TEF pour l'accès au Québec",
       "field": "Language Certification",
-      "institution": "Le français des affaires de la CCI Paris Île-de-France"
+      "institution": "Le français des affaires de la CCI Paris Île-de-France",
+      "logo": "/images/tefaq.png"
     }
   ],
   "ui": {
