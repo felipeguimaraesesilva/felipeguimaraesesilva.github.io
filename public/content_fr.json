@@ -159,12 +159,31 @@
       "institution": "Colégio Faculdade Cotemig",
       "location": "Minas Gerais, Brésil",
       "featured": true
+    }
+  ],
+  "certifications": [
+    {
+      "period": "Issued July 2026 · Expires July 2028",
+      "degree": "Professional Cloud Architect Certification",
+      "field": "Professional Cloud Certification",
+      "institution": "Google Cloud",
+      "logo": "/images/professional-cloud-architect-certification.png",
+      "link": "https://www.credly.com/badges/5f40e26f-5b46-4906-8302-a9141987584b/public_url"
     },
     {
-      "period": "Délivré jan 2025 · Expire jan 2027",
+      "period": "Issued Jun 2026 · Expires Jun 2029",
+      "degree": "Associate Cloud Engineer",
+      "field": "Cloud Certification",
+      "institution": "Google Cloud",
+      "logo": "/images/google-cloud-ace.png",
+      "link": "https://www.credly.com/badges/753d47fc-5eb6-4dea-9c26-51f07afb6d7f/public_url"
+    },
+    {
+      "period": "Issued Jan 2025 · Expires Jan 2027",
       "degree": "TEFAQ — TEF pour l'accès au Québec",
-      "field": "Certification linguistique",
-      "institution": "Le français des affaires de la CCI Paris Île-de-France"
+      "field": "Language Certification",
+      "institution": "Le français des affaires de la CCI Paris Île-de-France",
+      "logo": "/images/tefaq.png"
     }
   ],
   "ui": {

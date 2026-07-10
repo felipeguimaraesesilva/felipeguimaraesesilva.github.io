@@ -239,6 +239,14 @@
   ],
   "certifications": [
     {
+      "period": "Issued July 2026 · Expires July 2028",
+      "degree": "Professional Cloud Architect Certification",
+      "field": "Professional Cloud Certification",
+      "institution": "Google Cloud",
+      "logo": "/images/professional-cloud-architect-certification.png",
+      "link": "https://www.credly.com/badges/5f40e26f-5b46-4906-8302-a9141987584b/public_url"
+    },
+    {
       "period": "Issued Jun 2026 · Expires Jun 2029",
       "degree": "Associate Cloud Engineer",
       "field": "Cloud Certification",
