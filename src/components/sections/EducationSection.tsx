@@ -9,6 +9,7 @@ import {
   educationSecondaryGridSx,
   educationFeaturedCardSx,
   educationSecondaryCardSx,
+  certificationCardSx,
   educationPeriodSx,
   educationSecondaryPeriodSx,
   educationDegreeSx,
@@ -97,16 +98,12 @@ export function EducationSection() {
             target={cert.link ? "_blank" : undefined}
             rel={cert.link ? "noopener noreferrer" : undefined}
             sx={{
-              ...educationSecondaryCardSx,
+              ...certificationCardSx,
               width: 150,
               minHeight: 270,
               justifyContent: "flex-start",
               textDecoration: "none",
-              ...(cert.link && {
-                cursor: "pointer",
-                "&:hover": { opacity: 0.85, transform: "translateY(-2px)" },
-                transition: "opacity 0.2s, transform 0.2s",
-              }),
+              ...(cert.link && { cursor: "pointer" }),
             }}
           >
             {cert.logo && (

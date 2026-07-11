@@ -787,6 +787,24 @@ export const educationSecondaryCardSx: SxProps<Theme> = {
   },
 };
 
+export const certificationCardSx: SxProps<Theme> = {
+  display: "flex",
+  flexDirection: "column",
+  gap: 0.4,
+  p: 2,
+  borderRadius: 2,
+  border: "1px solid rgba(59,130,246,0.15)",
+  backgroundColor: "rgba(59,130,246,0.03)",
+  backdropFilter: "blur(4px)",
+  transition: "border-color 0.15s ease, background-color 0.15s ease, transform 0.15s ease, box-shadow 0.15s ease",
+  "&:hover": {
+    borderColor: "rgba(59,130,246,0.5)",
+    backgroundColor: "rgba(59,130,246,0.09)",
+    transform: "scale(1.07)",
+    boxShadow: "0 8px 24px rgba(59,130,246,0.15)",
+  },
+};
+
 export const educationPeriodSx: SxProps<Theme> = {
   color: "text.disabled",
   letterSpacing: "0.12em",
