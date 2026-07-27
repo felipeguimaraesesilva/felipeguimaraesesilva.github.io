@@ -70,11 +70,19 @@ export function Navbar() {
 
           {/* Desktop links */}
           <Box sx={navbarDesktopLinksSx}>
-            {navLinks.map((link) => (
-              <Button key={link.href} href={link.href} sx={navbarNavButtonSx}>
-                {link.label}
-              </Button>
-            ))}
+            {navLinks.map((link) => {
+              const isExternal = !link.href.startsWith("#");
+              return (
+                <Button
+                  key={link.href}
+                  href={link.href}
+                  sx={navbarNavButtonSx}
+                  {...(isExternal ? { target: "_blank", rel: "noopener noreferrer" } : {})}
+                >
+                  {link.label}
+                </Button>
+              );
+            })}
           </Box>
 
           {/* Mobile toggle */}
@@ -101,16 +109,23 @@ export function Navbar() {
           </IconButton>
         </Box>
         <List>
-          {navLinks.map((link) => (
-            <ListItem key={link.href} disablePadding>
-              <ListItemButton href={link.href} onClick={() => setMobileOpen(false)}>
-                <ListItemText
-                  primary={link.label}
-                  slotProps={{ primary: { sx: navbarDrawerItemTextSx } }}
-                />
-              </ListItemButton>
-            </ListItem>
-          ))}
+          {navLinks.map((link) => {
+            const isExternal = !link.href.startsWith("#");
+            return (
+              <ListItem key={link.href} disablePadding>
+                <ListItemButton
+                  href={link.href}
+                  onClick={() => setMobileOpen(false)}
+                  {...(isExternal ? { target: "_blank", rel: "noopener noreferrer" } : {})}
+                >
+                  <ListItemText
+                    primary={link.label}
+                    slotProps={{ primary: { sx: navbarDrawerItemTextSx } }}
+                  />
+                </ListItemButton>
+              </ListItem>
+            );
+          })}
         </List>
       </Drawer>
     </>
